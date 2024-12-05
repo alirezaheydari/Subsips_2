@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Subsips_2/obj/Debug/net8.0/Subsips_2.AssemblyInfoInputs.cache
+/Subsips_2/Subsips_2.csproj.user
+/Subsips_2/.vs/Subsips_2/FileContentIndex/94ae513d-051e-47ed-adf3-84a0f3b78ac5.vsidx
+/Subsips_2/.vs/Subsips_2/v17/.suo
+/Subsips_2/obj/Debug/net8.0/Subsips_2.AssemblyInfo.cs
