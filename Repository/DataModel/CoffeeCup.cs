@@ -17,4 +17,5 @@ public class CoffeeCup
 
     public CafeStation Cafe { get; set; }
     public List<Order> Orders { get; set; } = [];
+    //public List<CoffeeCupOrder> CoffeeCupOrders { get; set; } = [];
 }

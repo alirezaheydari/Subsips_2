@@ -20,9 +20,9 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
            .WithMany(p => p.Orders)
            .UsingEntity(
             "CoffeeCupOrder",
-            l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrdersId").HasPrincipalKey(nameof(Order.Id)),
-            r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)),
-            j => j.HasKey("CoffeeId", "OrdersId"));
+            l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrderId").HasPrincipalKey(nameof(Order.Id)).OnDelete(DeleteBehavior.NoAction),
+            r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)).OnDelete(DeleteBehavior.NoAction),
+            j => j.HasKey("CoffeeId", "OrderId"));
 
 
         builder.HasOne(o => o.Cafe)

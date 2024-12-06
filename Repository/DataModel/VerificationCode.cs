@@ -12,5 +12,5 @@ public class VerificationCode
     public required string Code { get; set; }
     public bool Verified { get; set; } = false;
     public DateTime CreateTime { get; set; }
-    public DateTime ExpireTime { get => CreateTime.AddMinutes(2); }
+    public DateTime ExpireTime { get; set; }
 }
