@@ -362,3 +362,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Subsips_2/obj/Debug/net8.0/project.razor.vs.bin
+/Subsips_2/Migrations
