@@ -2871,6 +2871,19 @@
             "rid": "win"
           }
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.11"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -8083,6 +8096,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8092,7 +8110,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.11",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.19.6",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8127,7 +8146,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
