@@ -1,0 +1,12 @@
+﻿button.form-btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--bright-primary-color);
+}
+
+.from-container-phone .from-content-phone {
+    margin: auto !important;
+}
+.from-container-phone {
+    height: 70vh;
+    display: flex;
+}

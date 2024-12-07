@@ -1,5 +1,13 @@
+:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #4F4F4F;
+    --bright-primary-color: #E4E0E1;
+    --bright-secondary-color: #F5F5DC;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: 'Vazirmatn', sans-serif !important;
 }
 
 @media (min-width: 768px) {

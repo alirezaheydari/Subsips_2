@@ -1,0 +1,38 @@
+﻿@using Subsips_2.Areas.Subsips.Models.Cafe;
+@model List<MenuCoffeeModelView>;
+
+@{
+
+    Layout = "~/Areas/Subsips/Views/Shared/_Layout.cshtml";
+    ViewData["PageName"] = "";
+}
+
+@section Style {
+    <link href="~/css/subsips/cafe/menu.css" rel="stylesheet" />
+}
+
+
+
+<div class="container mt-2">
+    <h1 class="mb-2 text-center">@ViewData["PageName"]</h1>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6 col-lg-4 mb-4 subway-station-card text-center">
+                <div class="card shadow-sm">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">@(item.CoffeeName)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong>قیمت: </strong> @(item.PriceOfCoffee) تومن
+                        </p>
+                        <div class="d-flex justify-content-between w-100 btn-bg-select ">
+                            <a href="/Subsips/Cafe/Select?CoffeeId=@(item.CoffeeId)&OrderId=@(ViewData["OrderId"])" class="btn w-100 bg-btn-secondary">انتخاب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

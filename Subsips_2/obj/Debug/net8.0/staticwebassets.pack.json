@@ -5,12 +5,52 @@
       "PackagePath": "staticwebassets\\Subsips_2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\coffee_cup\\add.css",
+      "PackagePath": "staticwebassets\\css\\cpanel\\coffee_cup\\add.css"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\site.css",
+      "PackagePath": "staticwebassets\\css\\cpanel\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\subway_station\\add.css",
+      "PackagePath": "staticwebassets\\css\\cpanel\\subway_station\\add.css"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\cafe\\menu.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\cafe\\menu.css"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\home\\index.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\home\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\site.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\user_customer\\phone_number_register.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\user_customer\\phone_number_register.css"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\Logo.ico",
+      "PackagePath": "staticwebassets\\img\\Logo.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\logo.webp",
+      "PackagePath": "staticwebassets\\img\\logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\mini-logo.webp",
+      "PackagePath": "staticwebassets\\img\\mini-logo.webp"
     },
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\site.js",

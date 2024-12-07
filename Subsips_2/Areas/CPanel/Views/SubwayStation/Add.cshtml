@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "افزودن ایستگاه";
+}
+
+
+
+@section Style {
+    <link href="~/css/cpanel/subway_station/add.css" rel="stylesheet" />
+}
+
+
+
+
+<form method="post" class="mdl-grid stationForm">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+        <input class="mdl-textfield__input" type="text" id="name" name="name" />
+        <label class="mdl-textfield__label" for="name">نام ایستگاه</label>
+    </div>
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        ثبت
+    </button>
+</form>

@@ -1,0 +1,20 @@
+﻿:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #4F4F4F;
+    --bright-primary-color: #E4E0E1;
+    --bright-secondary-color: #F5F5DC;
+}
+
+.bg-line-3 {
+    background-color: #00BCD4;
+    color: var(--secondary-color);
+}
+
+.bg-btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--bright-primary-color);
+}
+
+.subway-station-card {
+    cursor: pointer;
+}

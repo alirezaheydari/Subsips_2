@@ -15,6 +15,25 @@ public class CoffeeCup
 
     public Guid CafeId { get; set; }
 
+
+    public static CoffeeCup Create(string name, Guid cafeId, decimal price, string description, string imageUrl)
+    {
+        var model = new CoffeeCup
+        {
+            Name = name,
+            CafeId = cafeId,
+            Description = description ?? string.Empty,
+            Price = price,
+            ImageUrl = imageUrl ?? string.Empty
+        };
+
+
+
+
+        return model;
+    }
+
+
     public CafeStation Cafe { get; set; }
     public List<Order> Orders { get; set; } = [];
     //public List<CoffeeCupOrder> CoffeeCupOrders { get; set; } = [];

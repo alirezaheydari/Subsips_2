@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Subsips_2.BusinessLogic.CoffeeCups;
+using Subsips_2.BusinessLogic.Order;
+using Subsips_2.BusinessLogic.SubwayStation;
 using Subsips_2.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Subsips_2ContextConnection") ?? throw new InvalidOperationException("Connection string 'Subsips_2ContextConnection' not found.");
@@ -10,6 +13,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<ISubwayStationRepository, SubwayStationRepository>();
+builder.Services.AddTransient<ICoffeeCupRepository, CoffeeCupRepository>();
+builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+
 
 var app = builder.Build();
 

@@ -1,0 +1,7 @@
+﻿
+div.btn-bg-select a {
+    color: var(--bright-primary-color);
+}
+div.btn-bg-select {
+    background-color: var(--secondary-color);
+}

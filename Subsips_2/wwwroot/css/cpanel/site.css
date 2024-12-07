@@ -1,0 +1,57 @@
+﻿:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #4F4F4F;
+    --bright-primary-color: #E4E0E1;
+    --bright-secondary-color: #F5F5DC;
+}
+
+body {
+    background-color: var(--bright-primary-color);
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+.mdl-button {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+div {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+
+span {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
+header.mdl-layout__header {
+    background-color: var(--primary-color);
+}
+
+div.mdl-layout__header-row {
+    padding: 0 80px 0 80px
+}
+
+div.mdl-layout__drawer-button {
+    right: 0;
+    left: unset;
+}
+
+button.mdl-button--raised.mdl-button--colored {
+    background-color: var(--primary-color);
+}
+
+footer.mdl-mini-footer {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    background-color: var(--bright-primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+    footer.mdl-mini-footer .mdl-logo {
+        color: var(--secondary-color);
+    }

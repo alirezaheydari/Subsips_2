@@ -1,1 +1,41 @@
-﻿fuck you son of bitch
+﻿@using Subsips_2.Areas.Subsips.Models.SubwayStation
+@model List<SubwayStationViewModel>
+
+@{
+
+    Layout = "~/Areas/Subsips/Views/Shared/_Layout.cshtml";
+    ViewData["PageName"] = "ایستگاه مترو";
+}
+
+
+
+
+@section Style {
+    <link href="~/css/subsips/home/index.css" rel="stylesheet" />
+}
+
+
+
+<div class="container mt-2">
+    <h1 class="mb-2 text-center">@ViewData["PageName"]</h1>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div onclick="location.href='/Subsips/Cafe/Menu/@(item.StationId)'" class="col-md-6 col-lg-4 mb-4 subway-station-card text-center">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-line-3">
+                        <h5 class="card-title mb-0">@(item.Name)</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <strong>نام کافه: </strong> @item.CafeName
+                        </p>
+                        <div class="d-flex justify-content-between w-100">
+                            <a href="/Subsips/Cafe/Menu/@(item.StationId)" class="btn w-100 bg-btn-secondary">انتخاب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

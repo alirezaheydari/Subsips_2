@@ -26,12 +26,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CoffeeCup/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENvZmZlZUN1cFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/SubwayStation/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXFN1YndheVN0YXRpb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/SubwayStation/Index.cshtml]
@@ -66,8 +74,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/UserCustomer/PhoneNumberRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xVc2VyQ3VzdG9tZXJcUGhvbmVOdW1iZXJSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/_ViewImports.cshtml]
