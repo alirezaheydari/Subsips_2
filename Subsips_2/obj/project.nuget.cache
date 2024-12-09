@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/h/sh60MK7AbAhpZldZnpp+2vnuUgMFnCLunxc1Lf9fuNXFKuCVe39RJb07GB2+nWk5IhNZeyAmf1BhDdiJoQQ==",
+  "dgSpecHash": "6r8QFsoXIyN7ALbSTzU7wL3aw3JNcZyrzLz5y66Q43yfUpbMeipNWJgNqk5r3HemzJXgW7dScHuxt4qYuJ7cig==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Subsips_2.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\Ghmzf\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\Ghmzf\\.nuget\\packages\\melipayamak.restclient\\1.0.0\\melipayamak.restclient.1.0.0.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

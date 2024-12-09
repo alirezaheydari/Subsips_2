@@ -9,15 +9,15 @@
 @section Style {
     <link href="~/css/subsips/user_customer/phone_number_register.css" rel="stylesheet" />
 }
-
-
-
-<div class="container mt-4 ">
+<div class="container mt-4">
     <div class="row justify-content-center from-container-phone">
-        <div class="col-md-6 col-lg-4 from-content-phone ">
-            <form method="post" class="p-4 border rounded shadow-sm bg-light">
+        <div class="col-md-6 col-lg-4 from-content-phone">
+            <form method="post" class="p-4 border rounded shadow-sm bg-light" id="otpForm">
+                <!-- Hidden Fields -->
                 <input type="hidden" name="coffeeId" value="@Model.CoffeeId" />
                 <input type="hidden" name="orderId" value="@Model.OrderId" />
+
+                <!-- Phone Number Input -->
                 <div class="form-group mb-3">
                     <label for="PhoneNumber" class="form-label">شماره همراه</label>
                     <input name="PhoneNumber"
@@ -25,10 +25,41 @@
                            class="form-control"
                            id="PhoneNumber"
                            placeholder="شماره خود را وارد نمایید"
-                           required>
+                           required
+                           pattern="[0-9]{10,11}"
+                           title="شماره تلفن باید 10 تا 11 رقم باشد و تنها شامل اعداد باشد.">
+                    <div class="invalid-feedback">
+                        لطفا شماره تلفن معتبر وارد کنید.
+                    </div>
                 </div>
-                <button type="submit" class="btn form-btn-primary w-100">ثبت</button>
+
+                <!-- OTP Input -->
+                <div class="form-group mb-3 visually-hidden" id="otpSection">
+                    <label for="OtpCode" class="form-label">کد تایید</label>
+                    <input name="OtpCode"
+                           type="text"
+                           class="form-control"
+                           id="OtpCode"
+                           placeholder="کد تایید را وارد نمایید"
+                           pattern="[0-9]{6}"
+                           title="کد تایید باید شامل 6 رقم باشد.">
+                    <div class="invalid-feedback">
+                        لطفا کد تایید معتبر وارد کنید.
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn form-btn-primary w-100" id="submitButton">ثبت</button>
+
+                <!-- Resend OTP Button -->
+                <button type="button" class="btn btn-secondary w-100 mt-2 visually-hidden" id="resendOtpButton">
+                    ارسال مجدد کد
+                </button>
             </form>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="~/js/user_customer/phone_number_register.js"></script>
+}

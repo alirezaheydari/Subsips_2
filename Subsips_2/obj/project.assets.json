@@ -641,6 +641,15 @@
           }
         }
       },
+      "Melipayamak.RestClient/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/mpNuget.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/mpNuget.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4021,6 +4030,19 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "Melipayamak.RestClient/1.0.0": {
+      "sha512": "Xe6yQXhL75Mg+QfmmOX/Q+2elNVczyPeBfBYDsFQonVTGMYND0NUkbXvL5VtIK+sGdRxhfB+oB1oU/M/RE58tA==",
+      "type": "package",
+      "path": "melipayamak.restclient/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.0/mpNuget.dll",
+        "melipayamak.restclient.1.0.0.nupkg.sha512",
+        "melipayamak.restclient.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -8734,6 +8756,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Melipayamak.RestClient >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.11",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
@@ -8798,6 +8821,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Melipayamak.RestClient": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.11, )"

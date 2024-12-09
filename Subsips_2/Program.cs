@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Subsips_2.BusinessLogic.CoffeeCups;
 using Subsips_2.BusinessLogic.Order;
+using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.SubwayStation;
 using Subsips_2.Data;
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ISubwayStationRepository, SubwayStationRepository>();
 builder.Services.AddTransient<ICoffeeCupRepository, CoffeeCupRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+builder.Services.AddTransient<ISendSmsNotification, SendSmsNotification>();
+builder.Services.AddTransient<IVerificationCodeRepository, VerificationCodeRepository>();
 
 
 var app = builder.Build();

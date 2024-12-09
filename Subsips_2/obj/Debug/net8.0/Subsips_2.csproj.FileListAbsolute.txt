@@ -269,3 +269,4 @@ C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\refint\Subsip
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.pdb
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.genruntimeconfig.cache
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\ref\Subsips_2.dll
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\mpNuget.dll
