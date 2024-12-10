@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Repository.DataModel;
 using Repository.Helper.TockenGenerator;
 using Subsips_2.Areas.Subsips.Models.UserCustomer;
 using Subsips_2.BusinessLogic.SendNotification;
@@ -25,26 +24,34 @@ public class UserCustomerController : Controller
             OrderId = orderId
         });
     }
-    //[HttpPost]
-    //public async Task<IActionResult> PhoneNumberRegister(PhoneNumberRegisterFormRequestModel formRequest)
-    //{
-
-    //}
-    public  async Task<IActionResult> SendOtp(string phoneNumber)
+    [HttpPost]
+    public async Task<IActionResult> PhoneNumberRegister(PhoneNumberRegisterFormRequestModel formRequest)
     {
-        //if (!formRequest.IsValid())
-        //{
-        //    ViewData["ErrorMsg"] = "لطفا شماره تلفن را صحیح وارد نمایید";
-        //    return View("PhoneNumberRegister", new PhoneNumberRegisterViewModel
-        //    {
-        //        CoffeeId = formRequest.CoffeeId,
-        //        OrderId = formRequest.OrderId
-        //    });
-        //}
-        var otpCode = DigitVerificationCodeGenerator.GetDigitsConfirmationCode();
-        smsSender.SendVerificationCode(phoneNumber, otpCode);
-        await verificationCode.Add(phoneNumber, otpCode);
+        if (!formRequest.IsValid())
+            return NotFound();
 
-        return View();
+
+        var isVerified = await verificationCode.IsVerfied(formRequest.PhoneNumber, formRequest.OtpCode);
+        if (!formRequest.IsValid() || (!isVerified))
+            return NotFound();
+        // TODO : 1- create user 
+        // TODO : 2- assign cookie
+        // TODO : 3- create order
+        // TODO : 4- redirect to show status
+        return Ok();
+    }
+    [HttpPost]
+    public async Task<IActionResult> SendOtp([FromBody] SendOtpFormRequestModel model)
+    {
+
+        if (!model.IsPhoneNumberValid())
+        {
+            return NotFound();
+        }
+        var otpCode = DigitVerificationCodeGenerator.GetDigitsConfirmationCode();
+        var resOfSaveCode = await verificationCode.Add(model.PhoneNumber, otpCode);
+        if (resOfSaveCode.IsSuccess)
+            smsSender.SendVerificationCode(model.PhoneNumber, otpCode);
+        return Ok();
     }
 }

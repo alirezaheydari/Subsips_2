@@ -20,7 +20,7 @@ public class VerificationCodeRepository : IVerificationCodeRepository
         var lastVerify = GetLastVerificationRecord(phoneNumberWithoutZero);
 
         if (lastVerify is not null && (!lastVerify.IsExpired()))
-            return ResultFactory.GetGoodResult();
+            return ResultFactory.GetBadResult(new string[] { "already has code" });
 
         var res = VerificationCode.Create(phoneNumber, code);
 
