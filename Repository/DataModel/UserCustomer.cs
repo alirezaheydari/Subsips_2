@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Repository.Helper.Validations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Repository.DataModel;
 
@@ -16,4 +17,24 @@ public class UserCustomer
     public bool IsPhoneNumberVerified { get; set; } = false;
 
     public List<Order> Orders { get; set; } = [];
+
+
+    public static UserCustomer Create(string phoneNumber, string fullname)
+    {
+        phoneNumber = PhoneNumberValidation.GetPhoneNumberWithoutZero(phoneNumber);
+
+
+        var res = new UserCustomer
+        {
+            PhoneNumber = phoneNumber,
+            FullName = fullname,
+            IsPhoneNumberVerified = true,
+            Username = string.Empty
+        };
+
+
+        return res;
+    }
+
+
 }

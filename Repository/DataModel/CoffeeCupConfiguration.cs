@@ -15,13 +15,13 @@ public class CoffeeCupConfiguration : IEntityTypeConfiguration<CoffeeCup>
            .WithMany(p => p.Coffee)
            .HasForeignKey(s => s.CafeId);
 
-        builder.HasMany(o => o.Orders)
-           .WithMany(p => p.Coffee)
-           .UsingEntity(
-            "CoffeeCupOrder",
-            l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrderId").HasPrincipalKey(nameof(Order.Id)).OnDelete(DeleteBehavior.NoAction),
-            r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)).OnDelete(DeleteBehavior.NoAction),
-            j => j.HasKey("CoffeeId", "OrderId"));
+        //builder.HasMany(o => o.Orders)
+        //   .WithMany(p => p.Coffee)
+        //   .UsingEntity(
+        //    "CoffeeCupOrder",
+        //    l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrderId").HasPrincipalKey(nameof(Order.Id)).OnDelete(DeleteBehavior.NoAction),
+        //    r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)).OnDelete(DeleteBehavior.NoAction),
+        //    j => j.HasKey("CoffeeId", "OrderId"));
 
     }
 }

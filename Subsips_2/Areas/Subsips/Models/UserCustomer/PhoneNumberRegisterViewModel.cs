@@ -5,5 +5,6 @@ public class PhoneNumberRegisterViewModel
 
     public Guid OrderId { get; set; }
     public Guid CoffeeId { get; set; }
+    public Guid CafeId { get; set; }
 
 }

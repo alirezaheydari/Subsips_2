@@ -7,8 +7,9 @@
     const fullNameSection = document.getElementById('fullNameSection');
     const inputCoffeeId = document.getElementById('coffeeId');
     const inputOrderId = document.getElementById('orderId');
+    const inputCafeId = document.getElementById('cafeId');
     const otpInput = document.getElementById('OtpCode');
-    const fullNameInput = document.getElementById('OtpCode');
+    const fullNameInput = document.getElementById('fullName');
     const submitButton = document.getElementById('submitButton');
     const resendOtpButton = document.getElementById('resendOtpButton');
     const countdownTimer = document.getElementById("countdownTimer");

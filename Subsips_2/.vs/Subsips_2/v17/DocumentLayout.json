@@ -3,16 +3,61 @@
   "WorkspaceRootPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:wwwroot\\js\\user_customer\\phone_number_register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\coffeecupconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\usercustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\customerphoneregisterauthentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\controllers\\usercustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\coffeecuporderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\coffeecuporder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:wwwroot\\js\\user_customer\\phone_number_register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\usercustomer\\phonenumberregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\usercustomer\\phonenumberregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\models\\cafe\\menucoffeemodelview.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\models\\cafe\\menucoffeemodelview.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\usercustomer\\usercustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\usercustomer\\usercustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\usercustomer\\iusercustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\usercustomer\\iusercustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\sendnotification\\verificationcoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +68,8 @@
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\models\\usercustomer\\phonenumberregisterformrequestmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\sendnotification\\iverificationcoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\sendnotification\\iverificationcoderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\usercustomer\\icustomerphoneregisterauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\usercustomer\\icustomerphoneregisterauthenticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\subwaystation\\isubwaystationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,6 +82,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\wwwroot\\css\\subsips\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:wwwroot\\css\\subsips\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\models\\usercustomer\\phonenumberregisterviewmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\models\\usercustomer\\phonenumberregisterviewmodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,17 +95,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Menu.cshtml",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
               "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
               "RelativeToolTip": "Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA6AAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwB4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-07T20:12:36.259Z",
               "IsPinned": true,
@@ -76,20 +113,215 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VerificationCodeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
-              "RelativeToolTip": "BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBYAAABOAAAA",
+              "DocumentIndex": 0,
+              "Title": "CoffeeCupConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CoffeeCupConfiguration.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupConfiguration.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\CoffeeCupConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T21:41:44.465Z",
+              "WhenOpened": "2024-12-12T22:11:57.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerPhoneRegisterAuthentication.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T22:11:50.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\Order.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\Order.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\Order.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:42:41.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\UserCustomer.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\UserCustomer.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\UserCustomer.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\UserCustomer.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:47:56.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoffeeCupOrderConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupOrderConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CoffeeCupOrderConfiguration.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupOrderConfiguration.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\CoffeeCupOrderConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:47:17.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CoffeeCupOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupOrder.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CoffeeCupOrder.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupOrder.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\CoffeeCupOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:47:07.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\OrderConfiguration.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\DataModel\\OrderConfiguration.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\OrderConfiguration.cs",
+              "RelativeToolTip": "..\\Repository\\DataModel\\OrderConfiguration.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:42:42.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PhoneNumberRegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterViewModel.cs",
+              "RelativeToolTip": "Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:08:11.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UserCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\UserCustomerController.cs",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\UserCustomerController.cs",
+              "RelativeToolTip": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAgwFQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T21:28:01.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "phone_number_register.js",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\user_customer\\phone_number_register.js",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
+              "RelativeToolTip": "wwwroot\\js\\user_customer\\phone_number_register.js",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-12T21:29:56.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CoffeeCupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:05:59.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CafeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\CafeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\CafeController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\CafeController.cs",
+              "RelativeToolTip": "Areas\\Subsips\\Controllers\\CafeController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:05:38.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuCoffeeModelView.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\Cafe\\MenuCoffeeModelView.cs",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Models\\Cafe\\MenuCoffeeModelView.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\Cafe\\MenuCoffeeModelView.cs",
+              "RelativeToolTip": "Areas\\Subsips\\Models\\Cafe\\MenuCoffeeModelView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:05:24.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PhoneNumberRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "RelativeToolTip": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-07T21:31:43.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:01:10.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T21:01:59.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "PhoneNumberRegisterFormRequestModel.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterFormRequestModel.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Models\\UserCustomer\\PhoneNumberRegisterFormRequestModel.cs",
@@ -102,45 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "phone_number_register.js",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\user_customer\\phone_number_register.js",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
-              "RelativeToolTip": "wwwroot\\js\\user_customer\\phone_number_register.js",
-              "ViewState": "AQIAADcAAAAAAAAAAAAiwEMAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-10T21:22:48.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T22:30:05.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserCustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\UserCustomerController.cs",
-              "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\UserCustomerController.cs",
-              "RelativeToolTip": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAD4vyIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T21:28:01.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "IVerificationCodeRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SendNotification\\IVerificationCodeRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\SendNotification\\IVerificationCodeRepository.cs",
@@ -152,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "SubwayStationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
@@ -164,32 +358,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PhoneNumberRegister.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
-              "RelativeToolTip": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-07T21:31:43.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ICustomerPhoneRegisterAuthenticationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
-              "RelativeToolTip": "BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAmAAAA",
+              "DocumentIndex": 16,
+              "Title": "VerificationCodeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\SendNotification\\VerificationCodeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBYAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T21:13:48.262Z"
+              "WhenOpened": "2024-12-10T21:41:44.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "ISubwayStationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SubwayStation\\ISubwayStationRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\SubwayStation\\ISubwayStationRepository.cs",
@@ -201,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\subsips\\site.css",

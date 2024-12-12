@@ -26,12 +26,13 @@ public class CafeController : Controller
 
         ViewData["OrderId"] = Guid.NewGuid().ToString();
 
+
         return View(res.Result);
     }
 
-    public IActionResult Select(Guid coffeeId, Guid orderId)
+    public IActionResult Select(Guid coffeeId, Guid orderId, Guid cafeId)
     {
-        if (coffeeId == Guid.Empty && orderId == Guid.Empty)
+        if (coffeeId == Guid.Empty && orderId == Guid.Empty && cafeId == Guid.Empty)
             return NotFound();
         var request = ControllerContext?.HttpContext?.Request;
         var isRegistered = request == null ? false : request?.Cookies?.Any(x => x.Key == "RID") ?? false;
@@ -42,6 +43,6 @@ public class CafeController : Controller
         }
 
 
-        return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId });
+        return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId, cafeId });
     }
 }

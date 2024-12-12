@@ -23,6 +23,7 @@ public class CoffeeCupRepository : ICoffeeCupRepository
             CoffeeId = x.Id,
             PriceOfCoffee = x.Price,
             CoffeeName = x.Name,
+            CafeId = x.CafeId,
         }).ToList();
 
         return ResultFactory.GetGoodResult(result);

@@ -4,6 +4,7 @@ using Subsips_2.BusinessLogic.CoffeeCups;
 using Subsips_2.BusinessLogic.Order;
 using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.SubwayStation;
+using Subsips_2.BusinessLogic.UserCustomer;
 using Subsips_2.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Subsips_2ContextConnection") ?? throw new InvalidOperationException("Connection string 'Subsips_2ContextConnection' not found.");
@@ -20,6 +21,8 @@ builder.Services.AddTransient<ICoffeeCupRepository, CoffeeCupRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 builder.Services.AddTransient<ISendSmsNotification, SendSmsNotification>();
 builder.Services.AddTransient<IVerificationCodeRepository, VerificationCodeRepository>();
+builder.Services.AddTransient<IUserCustomerRepository, UserCustomerRepository>();
+builder.Services.AddTransient<ICustomerPhoneRegisterAuthenticationRepository, CustomerPhoneRegisterAuthenticationRepository>();
 
 
 var app = builder.Build();

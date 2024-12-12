@@ -7,6 +7,7 @@ public class PhoneNumberRegisterFormRequestModel
 {
     public Guid OrderId { get; set; }
     public Guid CoffeeId { get; set; }
+    public Guid CafeId { get; set; }
     public required string PhoneNumber { get; set; }
     public required string OtpCode { get; set; }
     public required string FullName { get; set; }

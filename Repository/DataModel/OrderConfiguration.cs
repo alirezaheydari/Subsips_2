@@ -16,13 +16,13 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
            .HasForeignKey(o => o.CustomerId); // Define foreign key
 
 
-        builder.HasMany(o => o.Coffee)
-           .WithMany(p => p.Orders)
-           .UsingEntity(
-            "CoffeeCupOrder",
-            l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrderId").HasPrincipalKey(nameof(Order.Id)).OnDelete(DeleteBehavior.NoAction),
-            r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)).OnDelete(DeleteBehavior.NoAction),
-            j => j.HasKey("CoffeeId", "OrderId"));
+        //builder.HasMany(o => o.Coffee)
+        //   .WithMany(p => p.Orders)
+        //   .UsingEntity(
+        //    "CoffeeCupOrder",
+        //    l => l.HasOne(typeof(Order)).WithMany().HasForeignKey("OrderId").HasPrincipalKey(nameof(Order.Id)).OnDelete(DeleteBehavior.NoAction),
+        //    r => r.HasOne(typeof(CoffeeCup)).WithMany().HasForeignKey("CoffeeId").HasPrincipalKey(nameof(CoffeeCup.Id)).OnDelete(DeleteBehavior.NoAction),
+        //    j => j.HasKey("CoffeeId", "OrderId"));
 
 
         builder.HasOne(o => o.Cafe)
