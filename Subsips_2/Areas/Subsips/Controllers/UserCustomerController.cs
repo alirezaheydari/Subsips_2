@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Repository.DataModel;
 using Repository.Helper.TockenGenerator;
 using Subsips_2.Areas.Subsips.Models.UserCustomer;
 using Subsips_2.BusinessLogic.Order;
@@ -43,29 +44,19 @@ public class UserCustomerController : Controller
         var isVerified = await verificationCode.IsVerfied(formRequest.PhoneNumber, formRequest.OtpCode);
         if (!formRequest.IsValid() || (!isVerified))
             return NotFound();
-        // TODO : 1- create user 
-
         var currentCustomer = (await userCustomer.Add(formRequest.PhoneNumber, formRequest.FullName)).Result;
 
 
-        // TODO : 2- assign cookie
-
         var registerId = await customerPhoneRegisterAuthentication.Add(formRequest.CafeId, currentCustomer.Id);
 
-        var request = ControllerContext?.HttpContext?.Request;
+        SetRegisterId("RID", registerId.Result.ToString());
 
-        request.Cookies.Append(new KeyValuePair<string, string>("RID", registerId.Result.ToString()));
 
-        // TODO : 3- create order
+
 
         await orderRepository.MakeNewOrder(formRequest.OrderId, string.Empty, formRequest.CafeId, formRequest.CoffeeId, currentCustomer.Id);
 
-
-        // TODO : 4- redirect to show status
-
-
-
-        return Ok();
+        return RedirectToAction("ShowStatusOrder", new { orderId = formRequest.OrderId });
     }
     [HttpPost]
     public async Task<IActionResult> SendOtp([FromBody] SendOtpFormRequestModel model)
@@ -80,6 +71,17 @@ public class UserCustomerController : Controller
         if (resOfSaveCode.IsSuccess)
             smsSender.SendVerificationCode(model.PhoneNumber, otpCode);
         return Ok();
+    }
+
+    public IActionResult ShowStatusOrder(Guid orderId)
+    {
+        var currentOrder = orderRepository.GetShowStatusOrderModelView(orderId);
+        if (currentOrder is null || currentOrder.IsFailed)
+            return NotFound();
+
+
+
+        return View(currentOrder.Result);
     }
 
     private void SetRegisterId(string key, string value)

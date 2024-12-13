@@ -14,5 +14,15 @@ public class CafeStationConfiguration : IEntityTypeConfiguration<CafeStation>
         builder.HasOne(o => o.Station)
            .WithOne(p => p.Cafe)
            .HasForeignKey<SubwayStation>(s => s.CafeId);
+
+
+        builder.Property(x => x.Name)
+            .HasMaxLength(128);
+
+        builder.Property(x => x.PhoneNumber)
+            .HasMaxLength(20);
+
+        builder.Property(x => x.Description)
+            .HasMaxLength(256);
     }
 }

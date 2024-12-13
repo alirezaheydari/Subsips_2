@@ -1,0 +1,28 @@
+﻿:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #4F4F4F;
+    --bright-primary-color: #E4E0E1;
+    --bright-secondary-color: #F5F5DC;
+}
+
+.order-status {
+    margin-top: 20px;
+}
+
+.order-title-section {
+    text-align: center;
+}
+.order-detail-section {
+    text-align: center;
+}
+.order-title-section img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.reload-status {
+    background-color: var(--secondary-color);
+}
+.call-cafe {
+    background-color: var(--primary-color);
+}

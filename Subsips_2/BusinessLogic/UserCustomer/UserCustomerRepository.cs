@@ -1,4 +1,5 @@
 ﻿using Repository.Helper;
+using Repository.Helper.Validations;
 using Subsips_2.Data;
 
 namespace Subsips_2.BusinessLogic.UserCustomer;
@@ -14,6 +15,15 @@ public class UserCustomerRepository : IUserCustomerRepository
 
     public async Task<ReturnResult<Repository.DataModel.UserCustomer>> Add(string phoneNumber, string fullname)
     {
+        phoneNumber = PhoneNumberValidation.GetPhoneNumberWithoutZero(phoneNumber);
+
+        var existedUser = context.UserCustomers.FirstOrDefault(x => x.PhoneNumber == phoneNumber);
+
+        if (existedUser is not null)
+        {
+            return ResultFactory.GetGoodResult(existedUser);
+        }
+
 
         var res = Repository.DataModel.UserCustomer.Create(phoneNumber, fullname);
 
@@ -25,6 +35,20 @@ public class UserCustomerRepository : IUserCustomerRepository
 
 
         return ResultFactory.GetGoodResult(res);
+    }
+
+    public ReturnResult<Repository.DataModel.UserCustomer> Find(Guid customerId)
+    {
+        var currentCustomer = context.UserCustomers.Find(customerId);
+
+        if (currentCustomer is null)
+            ResultFactory.GetBadResult<Repository.DataModel.UserCustomer>(new string[]
+            {
+                "Not Found"
+            });
+
+
+        return ResultFactory.GetGoodResult(currentCustomer);
     }
 
 }

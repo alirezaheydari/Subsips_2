@@ -8,6 +8,7 @@ public class CoffeeCupOrder
 {
     public Guid CoffeeId { get; set; }
     public Guid OrderId { get; set; }
+    public int Count { get; set; } = 1;
 
     [ForeignKey("OrderId")]
     public Order Order { get; set; } = null;

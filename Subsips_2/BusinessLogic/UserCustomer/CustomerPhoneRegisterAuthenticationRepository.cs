@@ -1,4 +1,5 @@
-﻿using Repository.Helper;
+﻿using Repository.DataModel;
+using Repository.Helper;
 using Subsips_2.Data;
 
 namespace Subsips_2.BusinessLogic.UserCustomer;
@@ -27,6 +28,20 @@ public class CustomerPhoneRegisterAuthenticationRepository : ICustomerPhoneRegis
         await _context.SaveChangesAsync();
 
         return ResultFactory.GetGoodResult(res.Result.Id);
+    }
+
+
+    public ReturnResult<CustomerPhoneRegisterAuthentication> Get(Guid registerId, Guid cafeId)
+    {
+        var registerRecord = _context.CustomerPhoneRegisterAuthentications.Find(registerId);
+
+        if (registerRecord is null || (!registerRecord.IsNotExpired(cafeId)))
+            return ResultFactory.GetBadResult<CustomerPhoneRegisterAuthentication>(new string[] {
+                "this is Unregister."
+            });
+
+
+        return ResultFactory.GetGoodResult(registerRecord);
     }
 
 }

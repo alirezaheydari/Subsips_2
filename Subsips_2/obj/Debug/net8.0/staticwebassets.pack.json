@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\css\\subsips\\user_customer\\phone_number_register.css"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\user_customer\\show_status_order.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\user_customer\\show_status_order.css"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -53,12 +57,28 @@
       "PackagePath": "staticwebassets\\img\\mini-logo.webp"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\order\\compeleted_order.webp",
+      "PackagePath": "staticwebassets\\img\\order\\compeleted_order.webp"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\order\\on_progress_order.webp",
+      "PackagePath": "staticwebassets\\img\\order\\on_progress_order.webp"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\order\\reject_order.webp",
+      "PackagePath": "staticwebassets\\img\\order\\reject_order.webp"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
       "PackagePath": "staticwebassets\\js\\user_customer\\phone_number_register.js"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\show_status_order.js",
+      "PackagePath": "staticwebassets\\js\\user_customer\\show_status_order.js"
     },
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\lib\\bootstrap\\LICENSE",

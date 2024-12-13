@@ -15,6 +15,18 @@ public class CoffeeCupConfiguration : IEntityTypeConfiguration<CoffeeCup>
            .WithMany(p => p.Coffee)
            .HasForeignKey(s => s.CafeId);
 
+        builder
+           .Property(b => b.Name)
+           .HasMaxLength(128);
+
+
+        builder.Property(x => x.ImageUrl)
+            .HasMaxLength(256);
+
+
+        builder.Property(x => x.Description)
+            .HasMaxLength(256);
+
         //builder.HasMany(o => o.Orders)
         //   .WithMany(p => p.Coffee)
         //   .UsingEntity(

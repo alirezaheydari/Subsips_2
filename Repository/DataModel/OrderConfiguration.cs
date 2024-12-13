@@ -25,6 +25,11 @@ public class OrderConfiguration : IEntityTypeConfiguration<Order>
         //    j => j.HasKey("CoffeeId", "OrderId"));
 
 
+        builder.Property(x => x.Description)
+            .HasMaxLength(256);
+
+
+
         builder.HasOne(o => o.Cafe)
            .WithMany(p => p.Orders)
            .HasForeignKey(o => o.CafeId); // Define foreign key

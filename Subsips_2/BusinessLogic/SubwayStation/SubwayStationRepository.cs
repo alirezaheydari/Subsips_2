@@ -42,6 +42,7 @@ public class SubwayStationRepository : ISubwayStationRepository
         return ResultFactory.GetGoodResult(_context.SubwayStations.Select(x => new SubwayStationViewModel
         {
             CafeName = x.Cafe.Name,
+            CafeId = x.CafeId,
             Name = x.Name,
             StationId = x.Id
         }).ToList());
