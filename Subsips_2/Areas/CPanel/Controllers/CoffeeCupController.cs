@@ -15,6 +15,14 @@ public class CoffeeCupController : Controller
     }
 
 
+    public IActionResult Index()
+    {
+        var resultOfCoffee = coffeeCup.GetAllBasedOnCafe(new Guid("B7C7D162-8871-4930-D55B-08DD08101897"));
+        if (resultOfCoffee.IsFailed)
+            return NotFound();
+        return View(resultOfCoffee.Result);
+    }
+
     public IActionResult Add()
     {
         return View();

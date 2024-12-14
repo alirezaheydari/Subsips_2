@@ -1,5 +1,6 @@
 ﻿using Repository.DataModel;
 using Repository.Helper;
+using Subsips_2.Areas.CPanel.Models.CoffeeCup.ViewModel;
 using Subsips_2.Areas.Subsips.Models.Cafe;
 using Subsips_2.Data;
 
@@ -24,6 +25,17 @@ public class CoffeeCupRepository : ICoffeeCupRepository
             PriceOfCoffee = x.Price,
             CoffeeName = x.Name,
             CafeId = x.CafeId,
+        }).ToList();
+
+        return ResultFactory.GetGoodResult(result);
+    }
+    public ReturnResult<List<CoffeeCupItemViewModel>> GetAllBasedOnCafe(Guid cafeId)
+    {
+        var result = context.CoffeeCups.Where(x => x.CafeId == cafeId).Select(x => new CoffeeCupItemViewModel
+        {
+            CoffeeId = x.Id,
+            CoffeeName= x.Name,
+            Price = x.Price,
         }).ToList();
 
         return ResultFactory.GetGoodResult(result);

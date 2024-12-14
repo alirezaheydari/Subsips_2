@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\usercustomer\\showstatusorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\usercustomer\\showstatusorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\coffeecup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\coffeecup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\models\\order\\viewmodel\\ordersmodelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\models\\order\\viewmodel\\ordersmodelview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\models\\coffeecup\\viewmodel\\coffeecupitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\models\\coffeecup\\viewmodel\\coffeecupitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\coffeecup\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\coffeecup\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\wwwroot\\css\\subsips\\user_customer\\show_status_order.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:wwwroot\\css\\subsips\\user_customer\\show_status_order.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\usercustomer\\showstatusorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\usercustomer\\showstatusorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\models\\usercustomer\\showstatusorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +109,6 @@
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\subwaystationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\coffeecuporder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -96,6 +124,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C1EBE55-CB00-4B31-A8A1-E088DEC577F5}|..\\Repository\\Repository.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\repository\\datamodel\\cafestationconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\coffeecups\\icoffeecuprepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\coffeecups\\icoffeecuprepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -105,24 +137,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T16:02:22.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ICoffeeCupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:59:04.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersModelView.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\Order\\ViewModel\\OrdersModelView.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Models\\Order\\ViewModel\\OrdersModelView.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\Order\\ViewModel\\OrdersModelView.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Models\\Order\\ViewModel\\OrdersModelView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:57:20.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CoffeeCupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:53:47.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoffeeCupItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\CoffeeCup\\ViewModel\\CoffeeCupItemViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Models\\CoffeeCup\\ViewModel\\CoffeeCupItemViewModel.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\CoffeeCup\\ViewModel\\CoffeeCupItemViewModel.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Models\\CoffeeCup\\ViewModel\\CoffeeCupItemViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:29:05.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T15:23:29.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAIwA0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-14T15:23:25.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:22:36.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "show_status_order.css",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\user_customer\\show_status_order.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\subsips\\user_customer\\show_status_order.css",
               "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\user_customer\\show_status_order.css",
               "RelativeToolTip": "wwwroot\\css\\subsips\\user_customer\\show_status_order.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-12-13T22:12:03.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "EnumHelper.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\Helper\\Enum\\EnumHelper.cs",
               "RelativeDocumentMoniker": "..\\Repository\\Helper\\Enum\\EnumHelper.cs",
@@ -130,12 +266,11 @@
               "RelativeToolTip": "..\\Repository\\Helper\\Enum\\EnumHelper.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAgwDsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:56:01.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:56:01.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "ShowStatusOrderViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\UserCustomer\\ShowStatusOrderViewModel.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Models\\UserCustomer\\ShowStatusOrderViewModel.cs",
@@ -143,25 +278,23 @@
               "RelativeToolTip": "Areas\\Subsips\\Models\\UserCustomer\\ShowStatusOrderViewModel.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAUwBMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T21:12:12.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T21:12:12.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "ShowStatusOrder.cshtml",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\ShowStatusOrder.cshtml",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\UserCustomer\\ShowStatusOrder.cshtml",
               "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\ShowStatusOrder.cshtml",
               "RelativeToolTip": "Areas\\Subsips\\Views\\UserCustomer\\ShowStatusOrder.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA4AAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAA0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T20:56:34.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T20:56:34.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "show_status_order.js",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\show_status_order.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\user_customer\\show_status_order.js",
@@ -169,12 +302,11 @@
               "RelativeToolTip": "wwwroot\\js\\user_customer\\show_status_order.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-13T20:03:59.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T20:03:59.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "UserCustomerController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\UserCustomerController.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
@@ -182,12 +314,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Controllers\\UserCustomerController.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAgwFMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:41:45.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:41:45.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\Order\\OrderRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Order\\OrderRepository.cs",
@@ -195,12 +326,11 @@
               "RelativeToolTip": "BusinessLogic\\Order\\OrderRepository.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAgwD0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:54:05.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:54:05.112Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "CafeController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\CafeController.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\CafeController.cs",
@@ -208,12 +338,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Controllers\\CafeController.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAwwEgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:46:04.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:46:04.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\Order\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Order\\IOrderRepository.cs",
@@ -221,12 +350,11 @@
               "RelativeToolTip": "BusinessLogic\\Order\\IOrderRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:47:39.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:47:39.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "phone_number_register.js",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\user_customer\\phone_number_register.js",
@@ -234,12 +362,11 @@
               "RelativeToolTip": "wwwroot\\js\\user_customer\\phone_number_register.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-13T20:05:08.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T20:05:08.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "IUserCustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
@@ -247,12 +374,11 @@
               "RelativeToolTip": "BusinessLogic\\UserCustomer\\IUserCustomerRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:13:54.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:13:54.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "PhoneNumberRegister.cshtml",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
@@ -260,12 +386,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T19:49:20.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:49:20.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
@@ -273,12 +398,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T20:02:45.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T20:02:45.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "UserCustomerRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
@@ -286,12 +410,11 @@
               "RelativeToolTip": "BusinessLogic\\UserCustomer\\UserCustomerRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T19:10:16.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T19:10:16.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "CustomerPhoneRegisterAuthenticationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\CustomerPhoneRegisterAuthenticationRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\CustomerPhoneRegisterAuthenticationRepository.cs",
@@ -299,12 +422,11 @@
               "RelativeToolTip": "BusinessLogic\\UserCustomer\\CustomerPhoneRegisterAuthenticationRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:26:51.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T16:26:51.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "ICustomerPhoneRegisterAuthenticationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
@@ -312,12 +434,11 @@
               "RelativeToolTip": "BusinessLogic\\UserCustomer\\ICustomerPhoneRegisterAuthenticationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T18:58:58.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T18:58:58.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "CustomerPhoneRegisterAuthentication.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
               "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
@@ -325,25 +446,24 @@
               "RelativeToolTip": "..\\Repository\\DataModel\\CustomerPhoneRegisterAuthentication.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T18:51:00.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T18:51:00.506Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 2,
               "Title": "CoffeeCupController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
               "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
               "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
               "RelativeToolTip": "Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAFAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T15:46:32.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "SubwayStationController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\SubwayStationController.cs",
               "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\SubwayStationController.cs",
@@ -351,12 +471,11 @@
               "RelativeToolTip": "Areas\\CPanel\\Controllers\\SubwayStationController.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:23:20.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T16:23:20.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "SubwayStationViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Models\\SubwayStation\\SubwayStationViewModel.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Models\\SubwayStation\\SubwayStationViewModel.cs",
@@ -364,12 +483,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Models\\SubwayStation\\SubwayStationViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:43:58.97Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:43:58.97Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "CafeStationConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CafeStationConfiguration.cs",
               "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CafeStationConfiguration.cs",
@@ -377,12 +495,11 @@
               "RelativeToolTip": "..\\Repository\\DataModel\\CafeStationConfiguration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:43:11.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:43:11.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "SubwayStationRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
@@ -390,12 +507,11 @@
               "RelativeToolTip": "BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAnwCwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:42:13.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:42:13.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\HomeController.cs",
@@ -403,12 +519,11 @@
               "RelativeToolTip": "Areas\\Subsips\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:42:07.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:42:07.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "CoffeeCupOrder.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\CoffeeCupOrder.cs",
               "RelativeDocumentMoniker": "..\\Repository\\DataModel\\CoffeeCupOrder.cs",
@@ -416,12 +531,11 @@
               "RelativeToolTip": "..\\Repository\\DataModel\\CoffeeCupOrder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:20:11.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T16:20:11.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Repository\\DataModel\\Order.cs",
               "RelativeDocumentMoniker": "..\\Repository\\DataModel\\Order.cs",
@@ -429,8 +543,7 @@
               "RelativeToolTip": "..\\Repository\\DataModel\\Order.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAA9wBUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T15:54:19.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T15:54:19.723Z"
             }
           ]
         }

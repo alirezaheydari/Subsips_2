@@ -1,0 +1,34 @@
+﻿@using Subsips_2.Areas.CPanel.Models.CoffeeCup.ViewModel
+@model List<CoffeeCupItemViewModel>
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+<table class="table w-100 table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">قهوه</th>
+            <th scope="col">قیمت</th>
+            <th scope="col">عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row"></th>
+                <td>@item.CoffeeName</td>
+                <td>@item.Price</td>
+                <td> ویرایش </td>
+            </tr>
+        }
+    </tbody>
+</table>

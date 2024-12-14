@@ -1,0 +1,40 @@
+﻿@using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
+@model List<OrdersModelView>
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">تاریخ ثبت</th>
+            <th scope="col">نام (مشتری)</th>
+            <th scope="col">شماره (مشتری)</th>
+            <th scope="col">قهوه</th>
+            <th scope="col">وضعیت</th>
+            <th scope="col">عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row"></th>
+                <td>@item.CreateOrderDate.ToString("yyyy/MM/dd - hh:mm")</td>
+                <td>@item.CustomerFullName</td>
+                <td>@item.CustomerPhoneNumber</td>
+                <td>@item.CoffeeName</td>
+                <td>@item.OrderStatus</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
