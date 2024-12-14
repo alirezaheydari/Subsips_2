@@ -38,11 +38,18 @@ public class Order
 
 public enum OrderStatus
 {
+    [Display(Name = "درحال پردازش")]
     OnProcessed,
+    [Display(Name = "ثبت")]
     Ordered,
+    [Display(Name = "تایید")]
     Confirmed,
+    [Display(Name = "رد")]
     Rejected,
+    [Display(Name = "کنسل")]
     Canceled,
+    [Display(Name = "آماده")]
     Ready,
+    [Display(Name = "تکمیل")]
     Completed
 }

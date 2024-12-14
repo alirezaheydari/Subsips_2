@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zxoGEuBVnN+0tWHAPK6I9gASez0Dy58hyhoLCJDy7X8=",
+  "Hash": "XnFuhoOBynOSWDU2EfkH0tUYAEe4JXumoQSTNmHyLYo=",
   "Source": "Subsips_2",
   "BasePath": "_content/Subsips_2",
   "Mode": "Default",
@@ -1214,6 +1214,25 @@
       "OriginalItemSpec": "wwwroot\\css\\cpanel\\coffee_cup\\add.css"
     },
     {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\order\\index.css",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "css/cpanel/order/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cpanel\\order\\index.css"
+    },
+    {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\site.css",
       "SourceId": "Subsips_2",
       "SourceType": "Discovered",
@@ -1497,6 +1516,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\order\\reject_order.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\order\\index.js",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "js/cpanel/order/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cpanel\\order\\index.js"
     },
     {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\site.js",

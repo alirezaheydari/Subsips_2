@@ -1,6 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using Microsoft.IdentityModel.Tokens;
+using NuGet.Protocol;
 using Repository.DataModel;
 using Repository.Helper;
+using Subsips_2.Areas.CPanel.Models.Order.Filter;
+using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
 using Subsips_2.Areas.Subsips.Models.UserCustomer;
 using Subsips_2.Data;
 
@@ -63,4 +68,62 @@ public class OrderRepository : IOrderRepository
     }
 
 
+    public ReturnResult<List<OrdersModelView>> GetOrdersModelView(OrderFilter filter)
+    {
+
+        var phoneNumberHasValue = false;
+        var statusHasValue = false;
+        var isJustToday = false;
+        
+        if (filter is not null)
+        {
+            phoneNumberHasValue = !filter.PhoneNumber.IsNullOrEmpty();
+            statusHasValue = filter.Status != null;
+            isJustToday = filter.TodayOrder;
+        }
+        var todayDate = DateTime.Now.Date;
+
+        var res = context.Orders
+            .Where(o => statusHasValue ? o.Status == (byte)filter.Status : true)
+            .Where(o => isJustToday ? o.CreateDate.Date == DateTime.Now.Date : true)
+            .Where(o => phoneNumberHasValue ? o.Customer.PhoneNumber.Contains(filter.PhoneNumber) : true)
+            .Select(o => new OrdersModelView
+        {
+            CafePhoneNumber = o.Cafe.PhoneNumber,
+            CoffeeName = o.CoffeeCupOrders.FirstOrDefault().Coffee.Name ?? string.Empty,
+            CustomerFullName = o.Customer.FullName ?? string.Empty,
+            CustomerPhoneNumber = o.Customer.PhoneNumber ?? string.Empty,
+            CreateOrderDate = o.CreateDate,
+            OrderId = o.Id,
+            OrderStatus = (OrderStatus)o.Status
+        }).ToList();
+
+        return ResultFactory.GetGoodResult(res);
+    }
+
+    public async Task<bool> Confirm(Guid orderId)
+    {
+        var order = context.Orders.Find(orderId);
+        order.Status = (byte)OrderStatus.Confirmed;
+        await context.SaveChangesAsync();
+        return true;
+    }
+
+
+    public async Task<bool> Ready(Guid orderId)
+    {
+        var order = context.Orders.Find(orderId);
+        order.Status = (byte)OrderStatus.Ready;
+        await context.SaveChangesAsync();
+        return true;
+    }
+
+
+    public async Task<bool> Reject(Guid orderId)
+    {
+        var order = context.Orders.Find(orderId);
+        order.Status = (byte)OrderStatus.Rejected;
+        await context.SaveChangesAsync();
+        return true;
+    }
 }

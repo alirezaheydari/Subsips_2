@@ -17,7 +17,11 @@ public class ShowStatusOrderViewModel
     public string GetStatusDisplayName
     {
         get {
-            return Status.ToString();
+            return Status.GetType()
+                        .GetMember(Status.ToString())
+                        .First()
+                        .GetCustomAttribute<DisplayAttribute>()
+                        .GetName();
         }
     }
 
@@ -29,11 +33,11 @@ public class ShowStatusOrderViewModel
             case OrderStatus.OnProcessed:
             case OrderStatus.Ordered:
             case OrderStatus.Confirmed:
-            case OrderStatus.Ready:
                 return "on_progress_order";
             case OrderStatus.Rejected:
             case OrderStatus.Canceled:
                 return "reject_order";
+            case OrderStatus.Ready:
             case OrderStatus.Completed:
                 return "compeleted_order";
         }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\cpanel\\coffee_cup\\add.css"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\order\\index.css",
+      "PackagePath": "staticwebassets\\css\\cpanel\\order\\index.css"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\cpanel\\site.css",
       "PackagePath": "staticwebassets\\css\\cpanel\\site.css"
     },
@@ -67,6 +71,10 @@
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\order\\reject_order.webp",
       "PackagePath": "staticwebassets\\img\\order\\reject_order.webp"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\order\\index.js",
+      "PackagePath": "staticwebassets\\js\\cpanel\\order\\index.js"
     },
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\site.js",
