@@ -1,36 +1,40 @@
-﻿@using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
-@model List<OrdersModelView>
+﻿@using Repository.DataModel
+@using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
+@model OrdersModelView
 @{
     Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+
+
+
 }
 
 
 @section Style {
-    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+    <link href="~/css/cpanel/order/index.css" rel="stylesheet" />
 
 }
 
-<div class="container mt-4">
+<div class="container mt-4" dir="rtl">
     <div class="row mb-3">
         <div class="col-12">
-            <form method="post" class="d-flex flex-wrap align-items-center gap-2">
+            <form class="d-flex flex-wrap align-items-center gap-2">
                 <div class="form-group mb-0">
                     <label for="phoneNumberFilter" class="form-label">شماره مشتری:</label>
-                    <input type="text" name="phoneNumber" id="phoneNumberFilter" class="form-control" placeholder="شماره مشتری را وارد کنید">
+                    <input value="@(Model.Filter?.PhoneNumber ?? string.Empty)" type="text" name="phoneNumber" id="phoneNumberFilter" class="form-control" placeholder="شماره مشتری را وارد کنید">
                 </div>
                 <div class="form-group mb-0">
-                    <label for="orderDateFilter" class="form-label">نمایش تاریخ امروز</label>
-                    <input type="checkbox" name="todayOrder" id="orderDateFilter" class="form-control">
-                </div>
-                <div class="form-group mb-0">
-                    <label for="orderStatusFilter" class="form-label">وضعیت سفارش:</label>
-                    <select name="orderStatus" id="orderStatusFilter" class="form-select">
-                        <option value=""></option>
-                        <option value="Pending">در انتظار</option>
-                        <option value="Confirmed">تایید شده</option>
-                        <option value="Ready">آماده</option>
-                        <option value="Rejected">رد شده</option>
+                    <label for="status" class="form-label">وضعیت سفارش:</label>
+                    <select name="Status" id="orderStatusFilter" class="form-select">
+                        <option @((Model.Filter?.Status == null) ? "selected" : "") value=""></option>
+                        <option @((Model.Filter?.Status == OrderStatus.OnProcessed) ? "selected" : "") value="0">در انتظار</option>
+                        <option @((Model.Filter?.Status == OrderStatus.Confirmed) ? "selected" : "") value="2">تایید شده</option>
+                        <option @((Model.Filter?.Status == OrderStatus.Rejected) ? "selected" : "") value="3">رد شده</option>
+                        <option @((Model.Filter?.Status == OrderStatus.Ready) ? "selected" : "") value="5">آماده</option>
                     </select>
+                </div>
+                <div class="form-group mb-0 d-flex">
+                    <label for="orderDateFilter" class="form-label">نمایش تاریخ امروز</label>
+                    <input @(((Model.Filter?.TodayOrder ?? false) ? "checked" : "")) type="checkbox" name="todayOrder" id="orderDateFilter" value="true" class="align-self-center me-2">
                 </div>
                 <button type="submit" class="btn btn-primary align-self-end">فیلتر</button>
             </form>
@@ -54,19 +58,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var item in Model)
+                        @foreach (var item in Model.Items)
                         {
-                            <tr>
+                            <tr class="@(item.GetRowClassName())" >
                                 <th scope="row"></th>
                                 <td>@item.CreateOrderDate.ToString("yyyy/MM/dd - hh:mm")</td>
                                 <td>@item.CustomerFullName</td>
                                 <td>@item.CustomerPhoneNumber</td>
                                 <td>@item.CoffeeName</td>
-                                <td>@item.OrderStatus</td>
+                                <td>@item.GetStatusDisplayName</td>
                                 <td>
-                                    <button onclick="sendRequest('Confirm', '@(item.OrderId)')" class="btn btn-success btn-sm">تایید</button>
-                                    <button onclick="sendRequest('Ready', '@(item.OrderId)')" class="btn btn-info btn-sm">آماده</button>
-                                    <button onclick="sendRequest('Reject', '@(item.OrderId)')" class="btn btn-danger btn-sm">رد</button>
+                                    <button onclick="sendRequest('Confirm', '@(item.OrderId)')" class="btn btn-success btn-sm m-2">تایید</button>
+                                    <button onclick="sendRequest('Ready', '@(item.OrderId)')" class="btn btn-info btn-sm m-2">آماده</button>
+                                    <button onclick="sendRequest('Reject', '@(item.OrderId)')" class="btn btn-danger btn-sm m-2">رد</button>
                                 </td>
                             </tr>
                         }

@@ -9,4 +9,5 @@ public interface ICoffeeCupRepository
     public ReturnResult<List<MenuCoffeeModelView>> GetAllBasedOnStation(Guid StationId);
     public Task<ReturnResult<bool>> Add(string name, Guid cafeId, decimal price, string description, string imageUrl);
     public ReturnResult<List<CoffeeCupItemViewModel>> GetAllBasedOnCafe(Guid cafeId);
+    public ReturnResult<CoffeeConfirmationInfo> FindCoffeeAndCafeInfo(Guid coffeeId);
 }

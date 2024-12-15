@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Repository.DataModel;
 using Subsips_2.Areas.CPanel.Models.Order.Filter;
+using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
 using Subsips_2.BusinessLogic.Order;
 
 namespace Subsips_2.Areas.CPanel.Controllers;
@@ -16,17 +17,6 @@ public class OrderController : Controller
         this.orderRepository = orderRepository;
     }
 
-    public IActionResult Index()
-    {
-        var resultOrders = orderRepository.GetOrdersModelView(null);
-        if (resultOrders is null || resultOrders.IsFailed)
-            return NotFound();
-
-
-        return View(resultOrders.Result);
-    }
-
-    [HttpPost]
     public IActionResult Index(OrderFilter filter)
     {
         var resultOrders = orderRepository.GetOrdersModelView(filter);
@@ -34,7 +24,13 @@ public class OrderController : Controller
             return NotFound();
 
 
-        return View(resultOrders.Result);
+        var res = new OrdersModelView
+        {
+            Filter = filter,
+            Items = resultOrders.Result
+        };
+
+        return View(res);
     }
 
 

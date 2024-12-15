@@ -25,7 +25,7 @@ public class CoffeeCupRepository : ICoffeeCupRepository
             PriceOfCoffee = x.Price,
             CoffeeName = x.Name,
             CafeId = x.CafeId,
-        }).ToList();
+        }).OrderBy(x => x.PriceOfCoffee).ToList();
 
         return ResultFactory.GetGoodResult(result);
     }
@@ -34,7 +34,7 @@ public class CoffeeCupRepository : ICoffeeCupRepository
         var result = context.CoffeeCups.Where(x => x.CafeId == cafeId).Select(x => new CoffeeCupItemViewModel
         {
             CoffeeId = x.Id,
-            CoffeeName= x.Name,
+            CoffeeName = x.Name,
             Price = x.Price,
         }).ToList();
 
@@ -52,4 +52,21 @@ public class CoffeeCupRepository : ICoffeeCupRepository
         return ResultFactory.GetGoodResult();
     }
 
+    public ReturnResult<CoffeeConfirmationInfo> FindCoffeeAndCafeInfo(Guid coffeeId)
+    {
+        var res = context.CoffeeCups.Where(x => x.Id == coffeeId)?.Select(x => new CoffeeConfirmationInfo
+        {
+            CafeName = x.Cafe.Name,
+            CoffeeName = x.Name,
+            StationName = x.Cafe.Station.Name,
+            Price = x.Price
+        }).FirstOrDefault();
+        if (res is null)
+            ResultFactory.GetBadResult(new string[]
+            {
+                "Model is not valid"
+            });
+
+        return ResultFactory.GetGoodResult(res);
+    }
 }

@@ -1,3 +1,13 @@
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.csproj.AssemblyReference.cache
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.AssemblyInfoInputs.cache
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.AssemblyInfo.cs
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.csproj.CoreCompileInputs.cache
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.RazorAssemblyInfo.cache
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.RazorAssemblyInfo.cs
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.sourcelink.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\appsettings.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Subsips_2.staticwebassets.runtime.json
@@ -9,6 +19,7 @@ C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Subsips_2.pdb
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\mpNuget.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -243,16 +254,6 @@ C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\runtimes\win\
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Repository.dll
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\Repository.pdb
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.csproj.AssemblyReference.cache
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.AssemblyInfoInputs.cache
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.AssemblyInfo.cs
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.csproj.CoreCompileInputs.cache
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.RazorAssemblyInfo.cache
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.RazorAssemblyInfo.cs
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.sourcelink.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\staticwebassets\msbuild.Subsips_2.Microsoft.AspNetCore.StaticWebAssets.props
@@ -269,4 +270,3 @@ C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\refint\Subsip
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.pdb
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\Subsips_2.genruntimeconfig.cache
 C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\obj\Debug\net8.0\ref\Subsips_2.dll
-C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\bin\Debug\net8.0\mpNuget.dll

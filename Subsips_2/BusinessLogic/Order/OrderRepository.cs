@@ -33,9 +33,23 @@ public class OrderRepository : IOrderRepository
 
         context.Orders.Add(newOrder);
 
-        await context.SaveChangesAsync();
+        try
+        {
 
-        return ResultFactory.GetGoodResult(newOrder);
+            await context.SaveChangesAsync();
+
+            return ResultFactory.GetGoodResult(newOrder);
+        }
+        catch (Exception ex)
+        {
+
+            return ResultFactory.GetBadResult< Repository.DataModel.Order>(new string[]
+            {
+                "model is not valid"
+            });
+            throw;
+        }
+
     }
 
     public ReturnResult<Repository.DataModel.Order> Find(Guid orderId)
@@ -68,7 +82,7 @@ public class OrderRepository : IOrderRepository
     }
 
 
-    public ReturnResult<List<OrdersModelView>> GetOrdersModelView(OrderFilter filter)
+    public ReturnResult<List<OrderItemsViewModel>> GetOrdersModelView(OrderFilter filter)
     {
 
         var phoneNumberHasValue = false;
@@ -87,7 +101,7 @@ public class OrderRepository : IOrderRepository
             .Where(o => statusHasValue ? o.Status == (byte)filter.Status : true)
             .Where(o => isJustToday ? o.CreateDate.Date == DateTime.Now.Date : true)
             .Where(o => phoneNumberHasValue ? o.Customer.PhoneNumber.Contains(filter.PhoneNumber) : true)
-            .Select(o => new OrdersModelView
+            .Select(o => new OrderItemsViewModel
         {
             CafePhoneNumber = o.Cafe.PhoneNumber,
             CoffeeName = o.CoffeeCupOrders.FirstOrDefault().Coffee.Name ?? string.Empty,

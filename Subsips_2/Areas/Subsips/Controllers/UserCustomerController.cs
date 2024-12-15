@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using Repository.DataModel;
 using Repository.Helper.TockenGenerator;
 using Subsips_2.Areas.Subsips.Models.UserCustomer;
 using Subsips_2.BusinessLogic.Order;
 using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.UserCustomer;
+using System.Security.Cryptography;
 
 namespace Subsips_2.Areas.Subsips.Controllers;
 
@@ -51,9 +54,6 @@ public class UserCustomerController : Controller
 
         SetRegisterId("RID", registerId.Result.ToString());
 
-
-
-
         await orderRepository.MakeNewOrder(formRequest.OrderId, string.Empty, formRequest.CafeId, formRequest.CoffeeId, currentCustomer.Id);
 
         return RedirectToAction("ShowStatusOrder", new { orderId = formRequest.OrderId });
@@ -71,6 +71,35 @@ public class UserCustomerController : Controller
         if (resOfSaveCode.IsSuccess)
             smsSender.SendVerificationCode(model.PhoneNumber, otpCode);
         return Ok();
+    }
+
+    public async Task<IActionResult> MakeOrder(Guid orderId, Guid cafeId, Guid coffeeId)
+    {
+        var request = ControllerContext?.HttpContext?.Request;
+        var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value;
+        var guidRid = new Guid(rid);
+        var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(guidRid, cafeId);
+
+        if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
+            return NotFound();
+
+        var regiseterRecord = regiseterRecordResult.Result;
+        if (regiseterRecord is null)
+            return NotFound();
+
+
+        var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
+        if (currentCustomerResult.IsFailed)
+            return NotFound();
+
+        SetRegisterId("RID", regiseterRecord.UserCustomerId.ToString());
+
+        var resutlOrder = await orderRepository.MakeNewOrder(orderId, string.Empty, cafeId, coffeeId, currentCustomerResult.Result.Id);
+
+        if (resutlOrder.IsFailed)
+            return NotFound();
+
+        return RedirectToAction("ShowStatusOrder", new { orderId });
     }
 
     public IActionResult ShowStatusOrder(Guid orderId)

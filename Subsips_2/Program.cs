@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Subsips_2.BusinessLogic.Cafe;
 using Subsips_2.BusinessLogic.CoffeeCups;
 using Subsips_2.BusinessLogic.Order;
 using Subsips_2.BusinessLogic.SendNotification;
@@ -22,6 +23,7 @@ builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 builder.Services.AddTransient<ISendSmsNotification, SendSmsNotification>();
 builder.Services.AddTransient<IVerificationCodeRepository, VerificationCodeRepository>();
 builder.Services.AddTransient<IUserCustomerRepository, UserCustomerRepository>();
+builder.Services.AddTransient<ICafeStationRepository, CafeStationRepository>();
 builder.Services.AddTransient<ICustomerPhoneRegisterAuthenticationRepository, CustomerPhoneRegisterAuthenticationRepository>();
 
 
