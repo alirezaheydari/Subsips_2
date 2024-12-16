@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Subsips_2.BusinessLogic.SubwayStation;
 
 namespace Subsips_2.Areas.CPanel.Controllers;
 
 [Area("CPanel")]
+[Authorize]
 public class SubwayStationController : Controller
 {
     private readonly ISubwayStationRepository subwayStation;

@@ -8,6 +8,7 @@ using Subsips_2.BusinessLogic.Order;
 namespace Subsips_2.Areas.CPanel.Controllers;
 
 [Area("CPanel")]
+[Authorize]
 public class OrderController : Controller
 {
     private readonly IOrderRepository orderRepository;

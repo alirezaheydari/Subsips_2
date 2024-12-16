@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Subsips_2.Areas.CPanel.Models.CoffeeCup;
 using Subsips_2.BusinessLogic.CoffeeCups;
 
 namespace Subsips_2.Areas.CPanel.Controllers;
 
 [Area("Cpanel")]
+[Authorize]
 public class CoffeeCupController : Controller
 {
     private readonly ICoffeeCupRepository coffeeCup;

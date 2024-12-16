@@ -1,13 +1,7 @@
-﻿@using Subsips_2.Areas.CPanel.Models.CoffeeCup.ViewModel
-@model List<CoffeeCupItemViewModel>
+﻿@using Subsips_2.Areas.CPanel.Models.Admin.ModelView
+@model List<CafeUsersModelView>
 @{
     Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
-}
-
-
-@section Style {
-    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
-
 }
 
 
@@ -19,8 +13,8 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">قهوه</th>
-                            <th scope="col">قیمت</th>
+                            <th scope="col">ایمیل</th>
+                            <th scope="col">وضعیت</th>
                             <th scope="col">عملیات</th>
                         </tr>
                     </thead>
@@ -29,11 +23,13 @@
                         {
                             <tr>
                                 <th scope="row"></th>
-                                <td>@item.CoffeeName</td>
-                                <td>@item.Price</td>
-                                <td> ویرایش </td>
+                                <td>@(item.IsEmailConfirmed ? "فعل" : "غیر فعال")</td>
+                                <td>@item.UserName</td>
+                                <td>
+                                    <a href="/Cpanel/Admin/UserConfirmed/@(item.Id)">فعال کردن</a>
+                                </td>
                             </tr>
-                        }
+                        } 
                     </tbody>
                 </table>
             </div>
