@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xzKsTAQJhkVFGf/hnbjnhyrp2zCLH7CFIZy+gAVqHb8=",
+  "Hash": "3w3DyLQMvrC1pPSq097/o2KcVdfQZGLZaPqFwnkRK98=",
   "Source": "Subsips_2",
   "BasePath": "_content/Subsips_2",
   "Mode": "Default",
@@ -1573,6 +1573,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\confirmed_order.js",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "js/user_customer/confirmed_order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user_customer\\confirmed_order.js"
     },
     {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\phone_number_register.js",

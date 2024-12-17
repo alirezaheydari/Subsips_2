@@ -11,6 +11,7 @@ public class PhoneNumberRegisterFormRequestModel
     public required string PhoneNumber { get; set; }
     public required string OtpCode { get; set; }
     public required string FullName { get; set; }
+    public string Description { get; set; }
     public bool IsValid()
     {
         if (OrderId == Guid.Empty || CoffeeId == Guid.Empty)

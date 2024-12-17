@@ -10,7 +10,7 @@
     <link href="~/css/subsips/cafe/confirmed-order.css" rel="stylesheet" />
 }
 
-<div class="row justify-content-center order-confirmation">
+<div dir="rtl" class="row justify-content-center order-confirmation">
     <div class="col-md-8 text-center">
         <h1 class="mb-4">برای ثبت لطفا سفارش را تایید کنید</h1>
         <div class="border rounded p-4 shadow-sm">
@@ -20,7 +20,17 @@
                 <p>قهوه : <span>@Model.CoffeeName</span></p>
                 <p>قیمت: <span>@Model.CoffeePrice</span></p>
                 <p>ایستگاه تحویل: <span>@Model.StationName</span></p>
-                <button class="w-100 confirmed-order mb-3" onclick="window.open('/subsips/UserCustomer/MakeOrder?orderId=@(Model.orderId)&cafeId=@(Model.cafeId)&coffeeId=@(Model.coffeeId)', '_blank').focus()"
+
+                <!-- Description Input -->
+                <div class="form-group mb-3" id="descriptionSection">
+                    <input name="description"
+                           type="text"
+                           class="form-control"
+                           id="description"
+                           placeholder="توضیحات را وارد نمایید">
+                </div>
+
+                <button class="w-100 confirmed-order mb-3" onclick="ConfirmedOrder_onClick()"
                         style="padding: 10px 20px; font-size: 16px; color: white; border: none; border-radius: 5px; cursor: pointer;">
                     تایید سفارش
                 </button>
@@ -29,3 +39,11 @@
         </div>
     </div>
 </div>
+
+<input type="hidden" id="coffeeId" name="coffeeId" value="@Model.coffeeId" />
+<input type="hidden" id="orderId" name="orderId" value="@Model.orderId" />
+<input type="hidden" id="cafeId" name="cafeId" value="@Model.cafeId" />
+
+@section Scripts {
+    <script src="~/js/user_customer/confirmed_order.js"></script>
+}

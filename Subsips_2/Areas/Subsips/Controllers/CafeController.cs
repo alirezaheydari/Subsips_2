@@ -68,21 +68,21 @@ public class CafeController : Controller
         var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value;
 
         if (rid.IsNullOrEmpty())
-            return NotFound(); // TODO : change 
+            return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId, cafeId });
 
         var guidRid = new Guid(rid);
 
         var regiseterRecordResult = customerPhoneRegister.Get(guidRid, cafeId);
 
         if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
-            return NotFound();
+            return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId, cafeId });
 
         var regiseterRecord = regiseterRecordResult.Result;
 
         var currentCustomerResult = customerRepo.Find(regiseterRecord.UserCustomerId);
 
         if (currentCustomerResult is null || currentCustomerResult.IsFailed)
-            return NotFound();
+            return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId, cafeId });
 
         var coffeeResult = coffeeCups.FindCoffeeAndCafeInfo(coffeeId);
 

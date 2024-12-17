@@ -5,6 +5,7 @@
     const phoneInput = document.getElementById('PhoneNumber');
     const otpSection = document.getElementById('otpSection');
     const fullNameSection = document.getElementById('fullNameSection');
+    const descriptionSection = document.getElementById('descriptionSection');
     const inputCoffeeId = document.getElementById('coffeeId');
     const inputOrderId = document.getElementById('orderId');
     const inputCafeId = document.getElementById('cafeId');
@@ -29,6 +30,8 @@
             // Show OTP section
             otpSection.classList.remove('visually-hidden');
             otpSection.classList.remove('d-none');
+            descriptionSection.classList.remove('visually-hidden');
+            descriptionSection.classList.remove('d-none');
             fullNameSection.classList.remove('visually-hidden');
             fullNameSection.classList.remove('d-none');
             otpInput.setAttribute('required', 'true');
