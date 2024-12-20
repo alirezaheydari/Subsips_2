@@ -11,6 +11,7 @@ public interface IOrderRepository
     public ReturnResult<Repository.DataModel.Order> Find(Guid orderId);
     public ReturnResult<List<OrderItemsViewModel>> GetOrdersModelView(OrderFilter? filter);
     public ReturnResult<ShowStatusOrderViewModel> GetShowStatusOrderModelView(Guid orderId);
+    public ReturnResult<List<UserOrderItem>> GetAllOrdersOfCustomer(Guid customerId);
     public Task<bool> Confirm(Guid orderId);
     public Task<bool> Ready(Guid orderId);
     public Task<bool> Reject(Guid orderId);

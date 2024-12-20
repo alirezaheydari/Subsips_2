@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/css/subsips/site.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Subsips_2.styles.css" asp-append-version="true" />
 
@@ -18,26 +18,26 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark box-shadow">
             <div class="container-fluid">
                 <div Logo >
-                    <img class="rounded-circle" width="50px" height="50px" src="~/img/logo.webp"  />
+                    <img class="rounded-circle" width="50px" height="50px" src="~/img/mini-logo.png" />
                     @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ساب سیپس</a> *@
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                @* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="subsips" asp-controller="Home" asp-action="Index">خانه</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="subsips" asp-controller="UserCustomer" asp-action="GetUserOrders">نمایش سفارشات</a>
                         </li>
                     </ul>
-                </div> *@
+                </div> 
             </div>
         </nav>
     </header>

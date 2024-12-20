@@ -18,7 +18,7 @@ public class OrderItemsViewModel
     public required string CustomerPhoneNumber { get; set; }
     public required string CafePhoneNumber { get; set; }
     public OrderStatus OrderStatus { get; set; }
-
+    public string? Description { get; set; }
     public string GetRowClassName() 
     {
         switch (OrderStatus)

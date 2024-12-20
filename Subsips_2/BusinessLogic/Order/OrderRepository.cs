@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.IdentityModel.Tokens;
 using NuGet.Protocol;
@@ -108,12 +109,30 @@ public class OrderRepository : IOrderRepository
             CustomerFullName = o.Customer.FullName ?? string.Empty,
             CustomerPhoneNumber = o.Customer.PhoneNumber ?? string.Empty,
             CreateOrderDate = o.CreateDate,
+            Description = o.Description,
             OrderId = o.Id,
             OrderStatus = (OrderStatus)o.Status
         }).ToList();
 
         return ResultFactory.GetGoodResult(res);
     }
+
+
+    public ReturnResult<List<UserOrderItem>> GetAllOrdersOfCustomer(Guid customerId)
+    {
+        var result = context.Orders.Where(o => o.CustomerId == customerId).Select(o => new UserOrderItem
+        {
+            CoffeeName = o.CoffeeCupOrders.FirstOrDefault().Coffee.Name,
+            CreateOrderDate = o.CreateDate,
+            orderId = o.Id,
+            StationName = o.Cafe.Station.Name,
+            Status = (OrderStatus)o.Status
+        }).ToList();
+
+
+        return ResultFactory.GetGoodResult(result);
+    }
+
 
     public async Task<bool> Confirm(Guid orderId)
     {

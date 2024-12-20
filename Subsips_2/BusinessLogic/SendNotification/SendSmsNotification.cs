@@ -17,4 +17,22 @@ public class SendSmsNotification : ISendSmsNotification
         var res = restClient.SendByBaseNumber(code, phoneNumber, _melliPayamkBodyIdForOTP);
         return ResultFactory.GetGoodResult();
     }
+
+    public ReturnResult<bool> SendOrderToCafe(string phoneNumber, string coffeeName)
+    {
+        try
+        {
+            var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
+            var msgContext = $"یک سفارش  {coffeeName} ثبت شد";
+            var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
+            return ResultFactory.GetGoodResult();
+        }
+        catch (Exception ex)
+        {
+            return ResultFactory.GetBadResult(new string[] {
+                "model is not valid SendOrderToCafe",
+                ex.Message
+            });
+        }
+    }
 }

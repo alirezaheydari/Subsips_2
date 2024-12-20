@@ -1,14 +1,14 @@
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+﻿using Microsoft.AspNetCore.Mvc;
 using Repository.DataModel;
+using Repository.Helper;
 using Repository.Helper.TockenGenerator;
 using Subsips_2.Areas.Subsips.Models.UserCustomer;
 using Subsips_2.Areas.Subsips.Models.UserCustomer.FormRequest;
+using Subsips_2.BusinessLogic.Cafe;
+using Subsips_2.BusinessLogic.CoffeeCups;
 using Subsips_2.BusinessLogic.Order;
 using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.UserCustomer;
-using System.Security.Cryptography;
 
 namespace Subsips_2.Areas.Subsips.Controllers;
 
@@ -20,15 +20,47 @@ public class UserCustomerController : Controller
     private readonly IUserCustomerRepository userCustomer;
     private readonly ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication;
     private readonly IOrderRepository orderRepository;
+    private readonly ICafeStationRepository cafeRepository;
+    private readonly ICoffeeCupRepository coffeeCupRepository;
 
-    public UserCustomerController(ISendSmsNotification smsSender, IVerificationCodeRepository verificationCode, IUserCustomerRepository userCustomer, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication, IOrderRepository orderRepository)
+    public UserCustomerController(ISendSmsNotification smsSender, IVerificationCodeRepository verificationCode, IUserCustomerRepository userCustomer, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication, IOrderRepository orderRepository, ICafeStationRepository cafeRepository, ICoffeeCupRepository coffeeCupRepository)
     {
         this.smsSender = smsSender;
         this.verificationCode = verificationCode;
         this.userCustomer = userCustomer;
         this.customerPhoneRegisterAuthentication = customerPhoneRegisterAuthentication;
         this.orderRepository = orderRepository;
+        this.cafeRepository = cafeRepository;
+        this.coffeeCupRepository = coffeeCupRepository;
     }
+    public IActionResult GetUserOrders()
+    {
+
+        var request = ControllerContext?.HttpContext?.Request;
+        var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value;
+        var guidRid = new Guid(rid);
+        var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(guidRid);
+
+        if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
+            return NotFound();
+
+        var regiseterRecord = regiseterRecordResult.Result;
+        if (regiseterRecord is null)
+            return NotFound();
+
+        var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
+        if (currentCustomerResult.IsFailed)
+            return NotFound();
+
+        var model = orderRepository.GetAllOrdersOfCustomer(currentCustomerResult.Result.Id);
+
+
+        return View(new GetUserOrdersViewModel
+        {
+            Items = model.Result
+        });
+    }
+    
     public IActionResult PhoneNumberRegister(Guid coffeeId, Guid orderId, Guid cafeId)
     {
         return View(new PhoneNumberRegisterViewModel
@@ -53,9 +85,8 @@ public class UserCustomerController : Controller
 
         var registerId = await customerPhoneRegisterAuthentication.Add(formRequest.CafeId, currentCustomer.Id);
 
-        SetRegisterId("RID", registerId.Result.ToString());
 
-        await orderRepository.MakeNewOrder(formRequest.OrderId, formRequest.Description, formRequest.CafeId, formRequest.CoffeeId, currentCustomer.Id);
+        await MakeOrder(formRequest.OrderId, formRequest.CoffeeId, formRequest.CafeId, registerId.Result, currentCustomer.Id, formRequest.Description);
 
         return RedirectToAction("ShowStatusOrder", new { orderId = formRequest.OrderId });
     }
@@ -79,7 +110,7 @@ public class UserCustomerController : Controller
         var request = ControllerContext?.HttpContext?.Request;
         var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value;
         var guidRid = new Guid(rid);
-        var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(guidRid, model.CafeId);
+        var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(guidRid);
 
         if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
             return NotFound();
@@ -88,19 +119,29 @@ public class UserCustomerController : Controller
         if (regiseterRecord is null)
             return NotFound();
 
-
         var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
         if (currentCustomerResult.IsFailed)
             return NotFound();
 
-        SetRegisterId("RID", regiseterRecord.Id.ToString());
+        await MakeOrder(model.OrderId, model.CoffeeId, model.CafeId, regiseterRecord.Id, currentCustomerResult.Result.Id, model.Description);
 
-        var resutlOrder = await orderRepository.MakeNewOrder(model.OrderId, model.Description, model.CafeId, model.CoffeeId, currentCustomerResult.Result.Id);
+        return RedirectToAction("ShowStatusOrder", new { model.OrderId });
+    }
+
+    private async Task<IActionResult> MakeOrder(Guid orderId, Guid coffeeId, Guid cafeId, Guid regiseterId, Guid customerId, string description)
+    {
+        SetRegisterId("RID", regiseterId.ToString());
+        await customerPhoneRegisterAuthentication.ReloadTockenRegisterationAsync(regiseterId);
+        var resutlOrder = await orderRepository.MakeNewOrder(orderId, description, cafeId, coffeeId, customerId);
 
         if (resutlOrder.IsFailed)
             return NotFound();
 
-        return RedirectToAction("ShowStatusOrder", new { model.OrderId });
+
+        var coffeeInfo = coffeeCupRepository.FindCoffeeAndCafeInfo(coffeeId);
+
+        smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName);
+        return Ok();
     }
 
     public IActionResult ShowStatusOrder(Guid orderId)

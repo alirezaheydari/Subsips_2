@@ -30,12 +30,18 @@ public class CustomerPhoneRegisterAuthenticationRepository : ICustomerPhoneRegis
         return ResultFactory.GetGoodResult(res.Result.Id);
     }
 
-
-    public ReturnResult<CustomerPhoneRegisterAuthentication> Get(Guid registerId, Guid cafeId)
+    public async Task<ReturnResult<bool>> ReloadTockenRegisterationAsync(Guid registerId)
+    {
+        var registerRecord = _context.CustomerPhoneRegisterAuthentications.Find(registerId);
+        registerRecord.ReloadTockenRegisteration();
+        await _context.SaveChangesAsync();
+        return ResultFactory.GetGoodResult();
+    }
+    public ReturnResult<CustomerPhoneRegisterAuthentication> Get(Guid registerId)
     {
         var registerRecord = _context.CustomerPhoneRegisterAuthentications.Find(registerId);
 
-        if (registerRecord is null || (!registerRecord.IsNotExpired(cafeId)))
+        if (registerRecord is null || (!registerRecord.IsNotExpired()))
             return ResultFactory.GetBadResult<CustomerPhoneRegisterAuthentication>(new string[] {
                 "this is Unregister."
             });

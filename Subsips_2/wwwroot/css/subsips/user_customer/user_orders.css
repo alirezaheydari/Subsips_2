@@ -1,0 +1,31 @@
+﻿.order-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .order-card h5 {
+        font-size: 1.25rem;
+    }
+
+    .order-card .status {
+        font-weight: bold;
+    }
+
+.status-pending {
+    color: #ffc107;
+}
+
+.status-confirmed {
+    color: #28a745;
+}
+
+.status-ready {
+    color: #17a2b8;
+}
+
+.status-rejected {
+    color: #dc3545;
+}

@@ -4,6 +4,7 @@ public class CoffeeConfirmationInfo
 {
     public required string CoffeeName { get; set; }
     public required string CafeName { get; set; }
+    public required string CafePhoneNumber { get; set; }
     public required string StationName { get; set; }
     public decimal Price { get; set; }
 }

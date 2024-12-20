@@ -54,6 +54,7 @@
                             <th scope="col">شماره (مشتری)</th>
                             <th scope="col">قهوه</th>
                             <th scope="col">وضعیت</th>
+                            <th scope="col">توضیحات</th>
                             <th scope="col">عملیات</th>
                         </tr>
                     </thead>
@@ -67,6 +68,7 @@
                                 <td>@item.CustomerPhoneNumber</td>
                                 <td>@item.CoffeeName</td>
                                 <td>@item.GetStatusDisplayName</td>
+                                <td>@((item.Description == null || item.Description == string.Empty) ? "-" : item.Description)</td>
                                 <td>
                                     <button onclick="sendRequest('Confirm', '@(item.OrderId)')" class="btn btn-success btn-sm m-2">تایید</button>
                                     <button onclick="sendRequest('Ready', '@(item.OrderId)')" class="btn btn-info btn-sm m-2">آماده</button>

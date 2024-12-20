@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\css\\subsips\\user_customer\\show_status_order.css"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\css\\subsips\\user_customer\\user_orders.css",
+      "PackagePath": "staticwebassets\\css\\subsips\\user_customer\\user_orders.css"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\logo.webp",
       "PackagePath": "staticwebassets\\img\\logo.webp"
+    },
+    {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\mini-logo.png",
+      "PackagePath": "staticwebassets\\img\\mini-logo.png"
     },
     {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\img\\mini-logo.webp",

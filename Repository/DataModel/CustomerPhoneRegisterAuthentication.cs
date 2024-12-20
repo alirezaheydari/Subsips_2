@@ -10,14 +10,9 @@ public class CustomerPhoneRegisterAuthentication
     public DateTime ExpireDate { get; set; }
 
 
-    public bool IsNotExpired(Guid cafeId)
+    public bool IsNotExpired()
     {
-        if (cafeId != this.CafeId) 
-            return false;
-        if (ExpireDate <= DateTime.Now)
-            return false; 
-
-        return true;
+        return (ExpireDate > DateTime.Now);
     }
 
 
@@ -27,9 +22,14 @@ public class CustomerPhoneRegisterAuthentication
         {
             CafeId = cafeId,
             UserCustomerId = userCustomerId,
-            ExpireDate = DateTime.UtcNow.AddDays(8)
+            ExpireDate = DateTime.UtcNow.AddDays(10)
         };
         
         return ResultFactory.GetGoodResult(res);
+    }
+
+    public void ReloadTockenRegisteration()
+    {
+        this.ExpireDate = DateTime.UtcNow.AddDays(10);
     }
 }

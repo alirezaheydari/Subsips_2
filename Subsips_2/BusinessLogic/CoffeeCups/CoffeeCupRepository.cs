@@ -58,6 +58,7 @@ public class CoffeeCupRepository : ICoffeeCupRepository
         {
             CafeName = x.Cafe.Name,
             CoffeeName = x.Name,
+            CafePhoneNumber = x.Cafe.PhoneNumber,
             StationName = x.Cafe.Station.Name,
             Price = x.Price
         }).FirstOrDefault();

@@ -72,7 +72,7 @@ public class CafeController : Controller
 
         var guidRid = new Guid(rid);
 
-        var regiseterRecordResult = customerPhoneRegister.Get(guidRid, cafeId);
+        var regiseterRecordResult = customerPhoneRegister.Get(guidRid);
 
         if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
             return RedirectToAction("PhoneNumberRegister", "UserCustomer", new { coffeeId, orderId, cafeId });
