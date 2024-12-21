@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Repository.Helper;
 using Subsips_2.Areas.CPanel.Models.CoffeeCup;
 using Subsips_2.BusinessLogic.CoffeeCups;
 
@@ -28,6 +29,13 @@ public class CoffeeCupController : Controller
     public IActionResult Add()
     {
         return View();
+    }
+
+
+    public IActionResult Edit(Guid Id)
+    {
+        var coffee = coffeeCup.Find(Id);
+        return View("Add", coffee.Result);
     }
 
     [HttpPost]

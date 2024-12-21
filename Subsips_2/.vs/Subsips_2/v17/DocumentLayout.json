@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\coffeecups\\icoffeecuprepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\coffeecups\\icoffeecuprepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\coffeecup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\coffeecup\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\coffeecup\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\coffeecup\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\coffeecupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\coffeecups\\coffeecuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\models\\coffeecup\\request\\addcoffeecuprequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\models\\coffeecup\\request\\addcoffeecuprequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-20T15:22:19.894Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\CoffeeCup\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T19:45:45.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\Subsips\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAASAAAA",
+              "DocumentIndex": 0,
+              "Title": "ICoffeeCupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\CoffeeCups\\ICoffeeCupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T19:44:04.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddCoffeeCupRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\CoffeeCup\\Request\\AddCoffeeCupRequestModel.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Models\\CoffeeCup\\Request\\AddCoffeeCupRequestModel.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\CoffeeCup\\Request\\AddCoffeeCupRequestModel.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Models\\CoffeeCup\\Request\\AddCoffeeCupRequestModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T19:43:05.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoffeeCupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\CoffeeCups\\CoffeeCupRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T19:41:03.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\CoffeeCup\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAB9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-20T15:20:54.026Z",
+              "WhenOpened": "2024-12-21T19:38:37.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CoffeeCupController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Controllers\\CoffeeCupController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAACUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T19:38:10.263Z",
               "EditorCaption": ""
             }
           ]

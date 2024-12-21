@@ -1,4 +1,5 @@
 ﻿using Repository.Helper;
+using Subsips_2.Areas.CPanel.Models.CoffeeCup;
 using Subsips_2.Areas.CPanel.Models.CoffeeCup.ViewModel;
 using Subsips_2.Areas.Subsips.Models.Cafe;
 
@@ -10,4 +11,5 @@ public interface ICoffeeCupRepository
     public Task<ReturnResult<bool>> Add(string name, Guid cafeId, decimal price, string description, string imageUrl);
     public ReturnResult<List<CoffeeCupItemViewModel>> GetAllBasedOnCafe(Guid cafeId);
     public ReturnResult<CoffeeConfirmationInfo> FindCoffeeAndCafeInfo(Guid coffeeId);
+    public ReturnResult<AddCoffeeCupRequestModel> Find(Guid coffeeId);
 }

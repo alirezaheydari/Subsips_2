@@ -1,5 +1,6 @@
 ﻿using Repository.DataModel;
 using Repository.Helper;
+using Subsips_2.Areas.CPanel.Models.CoffeeCup;
 using Subsips_2.Areas.CPanel.Models.CoffeeCup.ViewModel;
 using Subsips_2.Areas.Subsips.Models.Cafe;
 using Subsips_2.Data;
@@ -69,5 +70,19 @@ public class CoffeeCupRepository : ICoffeeCupRepository
             });
 
         return ResultFactory.GetGoodResult(res);
+    }
+
+    public ReturnResult<AddCoffeeCupRequestModel> Find(Guid coffeeId)
+    {
+        var coffee = context.CoffeeCups.Find(coffeeId);
+
+
+
+        return ResultFactory.GetGoodResult(new AddCoffeeCupRequestModel() 
+        { 
+            Name = coffee.Name,
+            Description = coffee.Description,
+            Price = coffee.Price,
+        });
     }
 }
