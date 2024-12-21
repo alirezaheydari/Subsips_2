@@ -14,6 +14,7 @@
 
 
 <form method="post" class="mdl-grid coffeecupForm">
+    <input type="hidden" name="coffeeId" value="@(Model?.CoffeeId ?? Guid.Empty)" />
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
         <input class="mdl-textfield__input" type="text" id="name" name="name" value="@(Model?.Name ?? string.Empty)" />
         <label class="mdl-textfield__label" for="name">نام قهوه</label>

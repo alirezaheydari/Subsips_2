@@ -82,7 +82,25 @@ public class CoffeeCupRepository : ICoffeeCupRepository
         { 
             Name = coffee.Name,
             Description = coffee.Description,
+            CoffeeId = coffeeId,
             Price = coffee.Price,
         });
     }
+    public async Task<ReturnResult<bool>> Update(AddCoffeeCupRequestModel model)
+    {
+        var coffee = context.CoffeeCups.Find(model.CoffeeId);
+
+
+
+        coffee.Name = model.Name;
+        coffee.Description = model.Description;
+        coffee.Price = model.Price;
+
+
+        await context.SaveChangesAsync();
+
+        return ResultFactory.GetGoodResult();
+
+    }
+
 }

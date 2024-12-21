@@ -12,4 +12,5 @@ public interface ICoffeeCupRepository
     public ReturnResult<List<CoffeeCupItemViewModel>> GetAllBasedOnCafe(Guid cafeId);
     public ReturnResult<CoffeeConfirmationInfo> FindCoffeeAndCafeInfo(Guid coffeeId);
     public ReturnResult<AddCoffeeCupRequestModel> Find(Guid coffeeId);
+    public Task<ReturnResult<bool>> Update(AddCoffeeCupRequestModel model);
 }

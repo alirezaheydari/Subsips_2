@@ -37,6 +37,12 @@ public class CoffeeCupController : Controller
         var coffee = coffeeCup.Find(Id);
         return View("Add", coffee.Result);
     }
+    [HttpPost]
+    public IActionResult Edit([FromForm] AddCoffeeCupRequestModel request)
+    {
+        coffeeCup.Update(request);
+        return RedirectToAction("Index");
+    }
 
     [HttpPost]
     public IActionResult Add([FromForm] AddCoffeeCupRequestModel request)
