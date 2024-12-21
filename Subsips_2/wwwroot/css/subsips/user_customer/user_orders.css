@@ -29,3 +29,6 @@
 .status-rejected {
     color: #dc3545;
 }
+.text-coffee-name {
+    color: var(--secondary-color)
+}
