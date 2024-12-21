@@ -25,6 +25,8 @@ public class SendSmsNotification : ISendSmsNotification
             var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
             var msgContext = $"یک سفارش  {coffeeName} ثبت شد";
             var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
+            msgContext = msgContext + $"\r\n به شماره {phoneNumber}";
+            restClient.Send("09120655488", fromPhoneNumber, msgContext, false);
             return ResultFactory.GetGoodResult();
         }
         catch (Exception ex)
