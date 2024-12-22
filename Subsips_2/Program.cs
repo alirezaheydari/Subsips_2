@@ -25,6 +25,7 @@ builder.Services.AddTransient<IVerificationCodeRepository, VerificationCodeRepos
 builder.Services.AddTransient<IUserCustomerRepository, UserCustomerRepository>();
 builder.Services.AddTransient<ICafeStationRepository, CafeStationRepository>();
 builder.Services.AddTransient<ICustomerPhoneRegisterAuthenticationRepository, CustomerPhoneRegisterAuthenticationRepository>();
+builder.Services.AddTransient<ITimeSheetShiftCafeRepository, TimeSheetShiftCafeRepository>();
 
 
 var app = builder.Build();

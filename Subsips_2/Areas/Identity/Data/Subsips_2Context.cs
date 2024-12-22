@@ -19,6 +19,7 @@ public class Subsips_2Context : IdentityDbContext<IdentityUser>
     public DbSet<UserCustomer> UserCustomers { get; set; }
     public DbSet<VerificationCode> VerificationCodes { get; set; }
     public DbSet<CoffeeCupOrder> CoffeeCupOrders { get; set; }
+    public DbSet<TimeSheetShiftCafe> TimeSheetsShifts { get; set; }
     public DbSet<CustomerPhoneRegisterAuthentication> CustomerPhoneRegisterAuthentications { get; set; }
     
 
@@ -30,6 +31,7 @@ public class Subsips_2Context : IdentityDbContext<IdentityUser>
         builder.ApplyConfiguration(new CafeStationConfiguration());
         builder.ApplyConfiguration(new CoffeeCupConfiguration());
         builder.ApplyConfiguration(new CoffeeCupOrderConfiguration());
+        builder.ApplyConfiguration(new TimeSheetShiftCafeConfiguration());
 
 
 
