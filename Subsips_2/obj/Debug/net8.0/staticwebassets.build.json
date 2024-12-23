@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JxfbzCIU9UAY/e7O0zsHcxN8/Sx8WOs2kFcAldvDWwM=",
+  "Hash": "srpbQXqMqzLwhneQCxPPgo3hNlJrDNjIV7kbh5KR0+Y=",
   "Source": "Subsips_2",
   "BasePath": "_content/Subsips_2",
   "Mode": "Default",
@@ -1573,6 +1573,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\order\\reject_order.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\cafe_station\\time-sheets.js",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "js/cpanel/cafe_station/time-sheets.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cpanel\\cafe_station\\time-sheets.js"
     },
     {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\order\\index.js",

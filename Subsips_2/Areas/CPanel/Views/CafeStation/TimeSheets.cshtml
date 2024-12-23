@@ -1,0 +1,63 @@
+﻿@using Subsips_2.Areas.CPanel.Models.CafeStation.ModelView
+@model TimeSheetsCafeViewModel
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="container mt-4" dir="rtl">
+    <div class="mb-4">
+
+        <button onclick="GotToAddShiftPage()" class="btn-bg-color-primary btn">
+            اضافه کردن شیفت
+        </button>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">زمان شروع</th>
+                            <th scope="col">زمان پایان</th>
+                            <th scope="col">روز هفته</th>
+                            <th scope="col">شماره همراه</th>
+                            <th scope="col">وضعیت</th>
+                            <th scope="col">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr >
+                                <th scope="row"></th>
+                                <td>@item.StartTime.ToString("hh:mm")</td>
+                                <td>@item.EndTime.ToString("hh:mm")</td>
+                                <td>@item.DayOfWeek</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>
+                                    <a href="/cpanel/cafeStation/ChangeTimeSheet/@(item.Id)">
+
+                                        @(item.IsActive ? "فعال" : "غیر فعال")
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="text-danger" href="/cpanel/cafeStation/DeleteTimeSheet/@(item.Id)">حذف</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/cpanel/cafe_station/time-sheets.js"></script>
+
+}

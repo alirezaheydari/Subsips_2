@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/Subsips_2.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link href="~/css/cpanel/site.css" rel="stylesheet" />
 
     @await RenderSectionAsync("Style", required: false)
@@ -32,6 +32,7 @@
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
                     <a class="mdl-navigation__link" href="/cpanel/Order">لیست سفارشات</a>
                     <a class="mdl-navigation__link" href="/cpanel/CoffeeCup">لیست قهوه</a>
+                    <a class="mdl-navigation__link" href="/cpanel/CafeStation/TimeSheets">لیست شیفت ها</a>
                     <a class="mdl-navigation__link text-danger" href="/User/Logout">خروج</a>
                 </nav>
             </div>
@@ -43,6 +44,7 @@
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="/cpanel/Order">لیست سفارشات</a>
                 <a class="mdl-navigation__link" href="/cpanel/CoffeeCup">لیست قهوه</a>
+                <a class="mdl-navigation__link" href="/cpanel/CafeStation/TimeSheets">لیست شیفت ها</a>
                 <a class="mdl-navigation__link text-danger" href="/User/Logout">خروج</a>
             </nav>
         </div>

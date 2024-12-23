@@ -1,4 +1,6 @@
-﻿form.coffeecupForm
-{
-    width: 500px;
+﻿
+@media (min-width: 700px){
+    form.coffeecupForm {
+        width: 500px;
+    }
 }

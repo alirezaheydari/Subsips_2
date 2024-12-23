@@ -26,7 +26,13 @@ public class TimeSheetShiftCafe
     {
 
         phoneNumber = PhoneNumberValidation.GetPhoneNumberWithoutZero(phoneNumber);
-        if (PhoneNumberValidation.IsValid(phoneNumber))
+        if (!PhoneNumberValidation.IsValid(phoneNumber))
+            return ResultFactory.GetBadResult<TimeSheetShiftCafe>(new string[]
+            {
+                "Model is not valid"
+            });
+
+        if (startTime >= endTime)
             return ResultFactory.GetBadResult<TimeSheetShiftCafe>(new string[]
             {
                 "Model is not valid"

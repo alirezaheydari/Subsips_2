@@ -30,12 +30,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXENhZmVVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZC5jc2h0bWw=
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/AddTimeSheet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZFRpbWVTaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEluZGV4LmNzaHRtbA==
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/TimeSheets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXFRpbWVTaGVldHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CoffeeCup/Add.cshtml]

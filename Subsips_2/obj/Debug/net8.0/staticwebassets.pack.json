@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\img\\order\\reject_order.webp"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\cafe_station\\time-sheets.js",
+      "PackagePath": "staticwebassets\\js\\cpanel\\cafe_station\\time-sheets.js"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\cpanel\\order\\index.js",
       "PackagePath": "staticwebassets\\js\\cpanel\\order\\index.js"
     },
