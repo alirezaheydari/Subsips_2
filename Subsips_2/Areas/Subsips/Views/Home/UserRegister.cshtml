@@ -1,0 +1,73 @@
+﻿@{
+
+    Layout = "~/Areas/Subsips/Views/Shared/_Layout.cshtml";
+    ViewData["PageName"] = "";
+}
+
+@section Style {
+    <link href="~/css/subsips/user_customer/phone_number_register.css" rel="stylesheet" />
+}
+<div class="container mt-4">
+    <div class="row justify-content-center from-container-phone">
+        <div class="col-md-6 col-lg-4 from-content-phone">
+            <form method="post" class="p-4 border rounded shadow-sm bg-light" id="otpForm">
+
+                <!-- Full Name Input -->
+                <div class="form-group mb-3 visually-hidden d-none" id="fullNameSection">
+                    <label for="fullName" class="form-label">نام</label>
+                    <input name="fullName"
+                           type="text"
+                           class="form-control"
+                           id="fullName"
+                           placeholder="نام خود را وارد نمایید">
+                </div>
+
+
+                <!-- Phone Number Input -->
+                <div class="form-group mb-3">
+                    <label for="PhoneNumber" class="form-label">شماره همراه</label>
+                    <input name="PhoneNumber"
+                           type="tel"
+                           class="form-control"
+                           id="PhoneNumber"
+                           placeholder="شماره خود را وارد نمایید"
+                           required
+                           pattern="[0-9]{10,11}"
+                           title="شماره تلفن باید 10 تا 11 رقم باشد و تنها شامل اعداد باشد.">
+                    <div class="invalid-feedback">
+                        لطفا شماره تلفن معتبر وارد کنید.
+                    </div>
+                </div>
+
+
+                <!-- timmer  -->
+                <span id="countdownTimer" class="text-muted"></span>
+
+                <!-- OTP Input -->
+                <div class="form-group mb-3 visually-hidden" id="otpSection">
+                    <label for="OtpCode" class="form-label">کد تایید</label>
+                    <input name="OtpCode"
+                           type="text"
+                           class="form-control"
+                           id="OtpCode"
+                           placeholder="کد تایید را وارد نمایید"
+                           pattern="[0-9]{6}"
+                           title="کد تایید باید شامل 6 رقم باشد.">
+                    <div class="invalid-feedback">
+                        لطفا کد تایید معتبر وارد کنید.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn form-btn-primary w-100" id="submitButton">ثبت</button>
+
+                <button type="button" class="btn btn-secondary w-100 mt-2 visually-hidden d-none" id="resendOtpButton">
+                    ارسال مجدد کد
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/subsips/home/user-register.js"></script>
+}

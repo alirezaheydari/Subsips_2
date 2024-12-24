@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\subsips\\home\\user-register.js",
+      "PackagePath": "staticwebassets\\js\\subsips\\home\\user-register.js"
+    },
+    {
       "Id": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\confirmed_order.js",
       "PackagePath": "staticwebassets\\js\\user_customer\\confirmed_order.js"
     },

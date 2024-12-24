@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "srpbQXqMqzLwhneQCxPPgo3hNlJrDNjIV7kbh5KR0+Y=",
+  "Hash": "bE1ENj44FbmFQOmO6/k8JNUzZNc/EZnLPTAQFX/SUgg=",
   "Source": "Subsips_2",
   "BasePath": "_content/Subsips_2",
   "Mode": "Default",
@@ -1630,6 +1630,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\subsips\\home\\user-register.js",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "js/subsips/home/user-register.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\subsips\\home\\user-register.js"
     },
     {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\wwwroot\\js\\user_customer\\confirmed_order.js",
