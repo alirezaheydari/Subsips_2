@@ -20,10 +20,11 @@ public class UserCustomerController : Controller
     private readonly IUserCustomerRepository userCustomer;
     private readonly ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication;
     private readonly IOrderRepository orderRepository;
+    private readonly ITimeSheetShiftCafeRepository timeSheetRepository;
     private readonly ICafeStationRepository cafeRepository;
     private readonly ICoffeeCupRepository coffeeCupRepository;
 
-    public UserCustomerController(ISendSmsNotification smsSender, IVerificationCodeRepository verificationCode, IUserCustomerRepository userCustomer, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication, IOrderRepository orderRepository, ICafeStationRepository cafeRepository, ICoffeeCupRepository coffeeCupRepository)
+    public UserCustomerController(ISendSmsNotification smsSender, IVerificationCodeRepository verificationCode, IUserCustomerRepository userCustomer, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegisterAuthentication, IOrderRepository orderRepository, ICafeStationRepository cafeRepository, ICoffeeCupRepository coffeeCupRepository, ITimeSheetShiftCafeRepository timeSheetRepository)
     {
         this.smsSender = smsSender;
         this.verificationCode = verificationCode;
@@ -32,6 +33,7 @@ public class UserCustomerController : Controller
         this.orderRepository = orderRepository;
         this.cafeRepository = cafeRepository;
         this.coffeeCupRepository = coffeeCupRepository;
+        this.timeSheetRepository = timeSheetRepository;
     }
     public IActionResult GetUserOrders()
     {
@@ -140,6 +142,16 @@ public class UserCustomerController : Controller
 
         var coffeeInfo = coffeeCupRepository.FindCoffeeAndCafeInfo(coffeeId);
 
+        var shiftPhoneNumbers = timeSheetRepository.GetPhoneNumbers(cafeId);
+        if (shiftPhoneNumbers is not null && shiftPhoneNumbers.Any())
+        {
+            shiftPhoneNumbers.ForEach(x =>
+            {
+                smsSender.SendOrderToCafe(x, coffeeInfo.Result.CoffeeName);
+            });
+        }
+
+
         smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName);
         return Ok();
     }
@@ -149,6 +161,11 @@ public class UserCustomerController : Controller
         var currentOrder = orderRepository.GetShowStatusOrderModelView(orderId);
         if (currentOrder is null || currentOrder.IsFailed)
             return NotFound();
+        var shiftPhoneNumbers = timeSheetRepository.GetPhoneNumbers(currentOrder.Result.CafeId);
+        if (shiftPhoneNumbers is not null && shiftPhoneNumbers.Any())
+        {
+            currentOrder.Result.CafePhoneNumber = shiftPhoneNumbers.First();
+        }
 
 
 

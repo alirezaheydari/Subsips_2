@@ -10,4 +10,5 @@ public interface ITimeSheetShiftCafeRepository
     public ReturnResult<List<TimeSheetItem>> GetTimeSheetsOfCafe(Guid cafeId);
     public Task<ReturnResult<bool>> Remove(Guid Id, Guid cafeId);
     public Task<ReturnResult<bool>> ChangeIsActiveState(Guid Id, Guid cafeId);
+    public List<string> GetPhoneNumbers(Guid cafeId);
 }

@@ -75,6 +75,7 @@ public class OrderRepository : IOrderRepository
             CoffeePrice = x.CoffeeCupOrders.FirstOrDefault().Coffee.Price,
             CreateOrderTime = x.CreateDate,
             OrderId = orderId,
+            CafeId = x.CafeId,
             Status = (OrderStatus)x.Status,
         })?.FirstOrDefault();
 
@@ -120,7 +121,7 @@ public class OrderRepository : IOrderRepository
 
     public ReturnResult<List<UserOrderItem>> GetAllOrdersOfCustomer(Guid customerId)
     {
-        var result = context.Orders.Where(o => o.CustomerId == customerId).Select(o => new UserOrderItem
+        var result = context.Orders.Where(o => o.CustomerId == customerId).OrderByDescending(x => x.CreateDate).Select(o => new UserOrderItem
         {
             CoffeeName = o.CoffeeCupOrders.FirstOrDefault().Coffee.Name,
             CreateOrderDate = o.CreateDate,

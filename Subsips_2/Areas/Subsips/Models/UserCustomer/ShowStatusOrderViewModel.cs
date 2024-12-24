@@ -7,6 +7,7 @@ namespace Subsips_2.Areas.Subsips.Models.UserCustomer;
 public class ShowStatusOrderViewModel
 {
     public Guid OrderId { get; set; }
+    public Guid CafeId { get; set; }
     public DateTime CreateOrderTime { get; set; }
     public required string CoffeeName { get; set; }
     public required string CafePhoneNumber { get; set; }

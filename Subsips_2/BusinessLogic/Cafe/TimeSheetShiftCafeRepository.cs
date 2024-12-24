@@ -46,7 +46,24 @@ public class TimeSheetShiftCafeRepository : ITimeSheetShiftCafeRepository
             Id = x.Id
         }).ToList());
     }
+    public List<string> GetPhoneNumbers(Guid cafeId)
+    {
 
+        var res = context.TimeSheetsShifts.Where(x => x.CafeId == cafeId && x.IsActive).ToList();
+
+        var todayNow = DateTime.Now;
+        var nowTime = todayNow.TimeOfDay;
+        var phoneNumbers = res.Where(x =>
+        {
+            if (x.DayOfWeek != todayNow.DayOfWeek)
+                return false;
+            TimeSpan firstTime = x.StartTime.TimeOfDay;
+            TimeSpan secondTime = x.EndTime.TimeOfDay;
+            return nowTime >= firstTime && nowTime < secondTime;
+        }).Select(x => x.PhoneNumber).ToList();
+
+        return phoneNumbers;
+    }
 
     public async Task<ReturnResult<bool>> Remove(Guid Id, Guid cafeId)
     {
