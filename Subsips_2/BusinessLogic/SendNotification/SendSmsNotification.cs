@@ -18,12 +18,12 @@ public class SendSmsNotification : ISendSmsNotification
         return ResultFactory.GetGoodResult();
     }
 
-    public ReturnResult<bool> SendOrderToCafe(string phoneNumber, string coffeeName)
+    public ReturnResult<bool> SendOrderToCafe(string phoneNumber, string coffeeName, string fullName, string userPhoneNumber)
     {
         try
         {
             var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
-            var msgContext = $"یک سفارش  {coffeeName} ثبت شد";
+            var msgContext = $"به نام  {fullName} با شماره {userPhoneNumber} یک سفارش  {coffeeName} ثبت شد";
             var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
             msgContext = msgContext + $"\r\n به شماره {phoneNumber}";
             restClient.Send("09120655488", fromPhoneNumber, msgContext, false);

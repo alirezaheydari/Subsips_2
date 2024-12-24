@@ -142,17 +142,31 @@ public class UserCustomerController : Controller
 
         var coffeeInfo = coffeeCupRepository.FindCoffeeAndCafeInfo(coffeeId);
 
+        var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(regiseterId);
+
+        if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
+            return NotFound();
+
+        var regiseterRecord = regiseterRecordResult.Result;
+        if (regiseterRecord is null)
+            return NotFound();
+
+        var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
+        if (currentCustomerResult.IsFailed)
+            return NotFound();
+
+
         var shiftPhoneNumbers = timeSheetRepository.GetPhoneNumbers(cafeId);
         if (shiftPhoneNumbers is not null && shiftPhoneNumbers.Any())
         {
             shiftPhoneNumbers.ForEach(x =>
             {
-                smsSender.SendOrderToCafe(x, coffeeInfo.Result.CoffeeName);
+                smsSender.SendOrderToCafe(x, coffeeInfo.Result.CoffeeName, currentCustomerResult.Result.FullName, currentCustomerResult.Result.PhoneNumber);
             });
         }
 
 
-        smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName);
+        smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName, currentCustomerResult.Result.FullName, currentCustomerResult.Result.PhoneNumber);
         return Ok();
     }
 
