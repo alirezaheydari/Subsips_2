@@ -39,20 +39,29 @@ public class UserCustomerController : Controller
     {
 
         var request = ControllerContext?.HttpContext?.Request;
-        var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value;
+        var rid = request?.Cookies?.FirstOrDefault(x => x.Key == "RID").Value ?? string.Empty;
         var guidRid = new Guid(rid);
         var regiseterRecordResult = customerPhoneRegisterAuthentication.Get(guidRid);
 
         if (regiseterRecordResult is null || regiseterRecordResult.IsFailed)
-            return NotFound();
+            return View(new GetUserOrdersViewModel
+            {
+                Items = new List<UserOrderItem>()
+            });
 
         var regiseterRecord = regiseterRecordResult.Result;
         if (regiseterRecord is null)
-            return NotFound();
+            return View(new GetUserOrdersViewModel
+            {
+                Items = new List<UserOrderItem>()
+            });
 
         var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
         if (currentCustomerResult.IsFailed)
-            return NotFound();
+            return View(new GetUserOrdersViewModel
+            {
+                Items = new List<UserOrderItem>()
+            });
 
         var model = orderRepository.GetAllOrdersOfCustomer(currentCustomerResult.Result.Id);
 

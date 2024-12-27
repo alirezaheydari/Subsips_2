@@ -1,5 +1,6 @@
 ﻿using Repository.DataModel;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Reflection;
 
 namespace Subsips_2.Areas.CPanel.Models.Order.ViewModel;
@@ -40,6 +41,16 @@ public class OrderItemsViewModel
         return string.Empty;
     }
 
+    public string GetCreateDateDisplay
+    {
+        get
+        {
+            var calendar = new PersianCalendar();
+            var persianDate = new DateTime(calendar.GetYear(CreateOrderDate), calendar.GetMonth(CreateOrderDate), calendar.GetDayOfMonth(CreateOrderDate), CreateOrderDate.Hour, CreateOrderDate.Minute, CreateOrderDate.Second);
+            var result = persianDate.ToString("yyyy/MM/dd - HH:mm");
+            return result;
+        }
+    }
     public string GetStatusDisplayName
     {
         get

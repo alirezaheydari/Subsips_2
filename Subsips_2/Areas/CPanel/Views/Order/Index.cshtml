@@ -63,7 +63,7 @@
                         {
                             <tr class="@(item.GetRowClassName())" >
                                 <th scope="row"></th>
-                                <td>@item.CreateOrderDate.ToString("yyyy/MM/dd - hh:mm")</td>
+                                <td>@item.GetCreateDateDisplay</td>
                                 <td>@item.CustomerFullName</td>
                                 <td>@item.CustomerPhoneNumber</td>
                                 <td>@item.CoffeeName</td>

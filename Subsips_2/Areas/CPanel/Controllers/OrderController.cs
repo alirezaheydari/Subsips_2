@@ -42,7 +42,7 @@ public class OrderController : Controller
         var res = new OrdersModelView
         {
             Filter = filter,
-            Items = resultOrders.Result
+            Items = resultOrders.Result?.OrderByDescending(x => x.CreateOrderDate).ToList()
         };
 
         return View(res);
