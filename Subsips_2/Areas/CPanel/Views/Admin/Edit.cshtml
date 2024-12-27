@@ -1,0 +1,54 @@
+﻿@using Subsips_2.Areas.CPanel.Models.Admin.ModelView
+@model EditCafeUserModelView
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+
+<form method="post" class="mdl-grid coffeecupForm">
+    <input type="hidden" name="userId" value="@(Model.UserId)" />
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <input disabled class="mdl-textfield__input" type="text" id="email" name="email" value="@(Model?.Email ?? string.Empty)" />
+            <label class="mdl-textfield__label" for="email">ایمیل</label>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <label for="CafeId" class="mdl-textfield__label"></label>
+            <select id="CafeId" name="CafeId" class="mdl-textfield__input" required>
+                @foreach (var cafe in Model.Cafes)
+                {
+                    <option value="@(cafe.CafeId)">@($"{cafe.StationName} ({cafe.CafeName})")</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Is Active -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isActive">
+            <input type="checkbox" id="isActive" name="IsActive" value="true" class="mdl-checkbox__input" />
+            فعال
+        </label>
+    </div>
+
+
+    <!-- Is Owner -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isOwner">
+            <input type="checkbox" id="isOwner" name="IsOwner" value="true" class="mdl-checkbox__input" />
+            صاحب کافه
+        </label>
+    </div>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised w-100 mdl-button--colored">
+        ثبت
+    </button>
+</form>

@@ -26,7 +26,8 @@
                                 <td>@(item.IsEmailConfirmed ? "فعل" : "غیر فعال")</td>
                                 <td>@item.UserName</td>
                                 <td>
-                                    <a href="/Cpanel/Admin/UserConfirmed/@(item.Id)">فعال کردن</a>
+                                    <a href="/Cpanel/Admin/UserConfirmed/@(item.Id)">فعال کردن</a> |
+                                    <a href="/Cpanel/Admin/Edit/@(item.Id)">ویرایش</a>
                                 </td>
                             </tr>
                         } 

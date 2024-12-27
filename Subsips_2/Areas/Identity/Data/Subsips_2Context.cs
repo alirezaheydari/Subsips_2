@@ -20,11 +20,9 @@ public class Subsips_2Context : IdentityDbContext<IdentityUser>
     public DbSet<VerificationCode> VerificationCodes { get; set; }
     public DbSet<CoffeeCupOrder> CoffeeCupOrders { get; set; }
     public DbSet<TimeSheetShiftCafe> TimeSheetsShifts { get; set; }
+    public DbSet<CafeStationAspNetUser> CafeStationAspNetUsers { get; set; }
     public DbSet<CustomerPhoneRegisterAuthentication> CustomerPhoneRegisterAuthentications { get; set; }
     
-
-
-
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfiguration(new OrderConfiguration());
@@ -32,6 +30,7 @@ public class Subsips_2Context : IdentityDbContext<IdentityUser>
         builder.ApplyConfiguration(new CoffeeCupConfiguration());
         builder.ApplyConfiguration(new CoffeeCupOrderConfiguration());
         builder.ApplyConfiguration(new TimeSheetShiftCafeConfiguration());
+        builder.ApplyConfiguration(new CafeStationAspNetUserConfiguration());
 
 
 

@@ -5,6 +5,7 @@
 @{
     Layout = "~/Areas/Subsips/Views/Shared/_Layout.cshtml";
     ViewData["PageName"] = "";
+    var statusDisplayName = EnumHelper<OrderStatus>.GetDisplayValue(Model.Status);
 }
 
 
@@ -18,7 +19,7 @@
             <!-- Order Summary -->
             <div class=" order-title-section mb-4">
                 <p>زمان ثبت: <span id="orderDate">@Model.CreateOrderTime.ToString("hh:mm") </span></p>
-                <p><strong>وضعیت فعلی:</strong> @(Model.GetStatusDisplayName)</p>
+                <p><strong>وضعیت فعلی:</strong> @(statusDisplayName)</p>
                 <img style="" src="~/img/order/@(Model.GetImageStatusOrder()).webp" />
             </div>
             <!-- Order Status Details -->

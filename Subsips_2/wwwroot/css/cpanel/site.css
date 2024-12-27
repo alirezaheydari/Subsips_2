@@ -40,6 +40,16 @@ div {
 }
 
 
+select.mdl-textfield__input {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+option.mdl-textfield__input {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+.mdl-textfield__input {
+    font-family: 'Vazirmatn', sans-serif !important;
+}
+
 span {
     font-family: 'Vazirmatn', sans-serif !important;
 }
