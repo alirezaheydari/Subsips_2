@@ -1,4 +1,5 @@
-﻿using Repository.DataModel;
+﻿using Microsoft.IdentityModel.Tokens;
+using Repository.DataModel;
 using Repository.Helper;
 using Subsips_2.Data;
 
@@ -27,5 +28,21 @@ public class CafeStationAspNetUserRepository: ICafeStationAspNetUserRepository
 
 
         return ResultFactory.GetGoodResult();
+    }
+
+    public Guid FindCafeId(string userId)
+    {
+        if (userId.IsNullOrEmpty())
+            return Guid.Empty;
+
+        var userIdLowerCase = userId.ToLower();
+        var res = context.CafeStationAspNetUsers.Where(x => x.AspNetUserId.ToLower().Equals(userIdLowerCase) && x.IsActive).FirstOrDefault();
+
+        if (res is null)
+        {
+            return Guid.Empty;
+        }
+
+        return res.CafeId;
     }
 }

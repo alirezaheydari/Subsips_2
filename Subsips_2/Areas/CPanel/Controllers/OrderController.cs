@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Repository.DataModel;
 using Subsips_2.Areas.CPanel.Models.Order.Filter;
 using Subsips_2.Areas.CPanel.Models.Order.ViewModel;
+using Subsips_2.BusinessLogic.Cafe;
 using Subsips_2.BusinessLogic.Order;
+using System.Security.Claims;
 
 namespace Subsips_2.Areas.CPanel.Controllers;
 
@@ -12,14 +14,26 @@ namespace Subsips_2.Areas.CPanel.Controllers;
 public class OrderController : Controller
 {
     private readonly IOrderRepository orderRepository;
-
-    public OrderController(IOrderRepository orderRepository)
+    private readonly IHttpContextAccessor httpContextAccessor;
+    private readonly ICafeStationAspNetUserRepository cafeStationAspNetUserRepository;
+    public OrderController(IOrderRepository orderRepository, IHttpContextAccessor httpContextAccessor, ICafeStationAspNetUserRepository cafeStationAspNetUserRepository)
     {
         this.orderRepository = orderRepository;
+        this.httpContextAccessor = httpContextAccessor;
+        this.cafeStationAspNetUserRepository = cafeStationAspNetUserRepository;
     }
 
     public IActionResult Index(OrderFilter filter)
     {
+        var username = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+        var cafeId = cafeStationAspNetUserRepository.FindCafeId(username);
+
+        if (cafeId == Guid.Empty)
+            return NotFound();
+
+        filter.CafeId = cafeId;
+
+
         var resultOrders = orderRepository.GetOrdersModelView(filter);
         if (resultOrders is null || resultOrders.IsFailed)
             return NotFound();

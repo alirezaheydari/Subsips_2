@@ -100,6 +100,7 @@ public class OrderRepository : IOrderRepository
         var todayDate = DateTime.Now.Date;
 
         var res = context.Orders
+            .Where(o => o.CafeId == filter.CafeId)
             .Where(o => statusHasValue ? o.Status == (byte)filter.Status : true)
             .Where(o => isJustToday ? o.CreateDate.Date == DateTime.Now.Date : true)
             .Where(o => phoneNumberHasValue ? o.Customer.PhoneNumber.Contains(filter.PhoneNumber) : true)
