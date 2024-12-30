@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Subsips_2.Areas.CPanel.Controllers;
 
 [Area("Cpanel")]
+[Authorize]
 public class UserController : Controller
 {
 

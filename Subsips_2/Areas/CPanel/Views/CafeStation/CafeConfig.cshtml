@@ -1,0 +1,41 @@
+﻿@using Subsips_2.Areas.CPanel.Models.CafeStation.FormRequest
+@model CafeConfigFormRequest
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" class="mdl-grid mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+    <!-- Header -->
+    <h5 class="mdl-typography--headline5 mdl-cell mdl-cell--12-col">کانفیگ برای ارسال پیام</h5>
+
+    <!-- Phone Number -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <textarea name="defaultMsg">@(Model?.DefaultMsg ?? "")</textarea>
+            <label class="mdl-textfield__label" for="defaultMsg">پیام پیشفرض</label>
+        </div>
+    </div>
+
+    <!-- Is Active -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isSendSms">
+            <input type="checkbox" id="isSendSms" name="isSendSms" @((Model?.IsSendSms ?? false) ? "checked" : "") value="true" class="mdl-checkbox__input" />
+            ارسال پیام بعد ثبت شماره
+        </label>
+    </div>
+
+    <!-- Is Active -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isActive">
+            <input type="checkbox" id="isActive" name="IsActive" value="true" @((Model?.IsActive ?? false) ? "checked" : "") class="mdl-checkbox__input" />
+            فعال
+        </label>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="mdl-cell mdl-cell--12-col">
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-cell--12-col w-100">
+            ثبت
+        </button>
+    </div>
+</form>

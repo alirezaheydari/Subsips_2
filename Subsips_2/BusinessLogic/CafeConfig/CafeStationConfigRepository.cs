@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Repository.DataModel;
+﻿using Repository.DataModel;
 using Repository.Helper;
 using Subsips_2.Data;
 
@@ -16,8 +15,21 @@ public class CafeStationConfigRepository : ICafeStationConfigRepository
 
     public async Task<ReturnResult<bool>> Add(Guid cafeId, string defaultSmsMsg, bool isSendSms = false, bool IsActive = false)
     {
-        var model = CafeStationConfig.Create(cafeId, defaultSmsMsg, isSendSms, IsActive);
-        context.CafeStationConfigs.Add(model);
+        var ExistsModel = context.CafeStationConfigs.Where(x => x.CafeId == cafeId).FirstOrDefault();
+
+
+        if (ExistsModel is null)
+        {
+            ExistsModel = CafeStationConfig.Create(cafeId, defaultSmsMsg, isSendSms, IsActive);
+            context.CafeStationConfigs.Add(ExistsModel);
+        }
+        else
+        {
+            ExistsModel.DefaultSmsMsg = defaultSmsMsg;
+            ExistsModel.IsSendSms = isSendSms;
+            ExistsModel.IsActive = IsActive;
+        }
+
 
         await context.SaveChangesAsync();
 
@@ -45,6 +57,19 @@ public class CafeStationConfigRepository : ICafeStationConfigRepository
     public ReturnResult<CafeStationConfig> FindActiveByCafeId(Guid cafeId)
     {
         var res = context.CafeStationConfigs.Where(x => x.IsActive && x.CafeId == cafeId).FirstOrDefault();
+
+        if (res is null)
+            return ResultFactory.GetBadResult<CafeStationConfig>(new string[]
+            {
+                "Model is not valid"
+            });
+
+        return ResultFactory.GetGoodResult(res);
+    }
+
+    public ReturnResult<CafeStationConfig> FindByCafeId(Guid cafeId)
+    {
+        var res = context.CafeStationConfigs.Where(x => x.CafeId == cafeId).FirstOrDefault();
 
         if (res is null)
             return ResultFactory.GetBadResult<CafeStationConfig>(new string[]
