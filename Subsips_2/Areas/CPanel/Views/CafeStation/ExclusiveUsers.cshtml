@@ -1,0 +1,51 @@
+﻿@using Subsips_2.Areas.CPanel.Models.CafeStation.ModelView
+@model ExclusiveUsersModelView
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+<div class="container mt-4">
+    <div class="mb-4">
+        <a href="/cpanel/CafeStation/AddExclusiveUser" class="btn-bg-color-primary btn">
+            اضافه کردن شماره
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table w-100 table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">نام</th>
+                            <th scope="col">شماره</th>
+                            @* <th scope="col">عملیات</th> *@
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <th scope="row"></th>
+                                <td>@(item.FullName ?? "-")</td>
+                                <td>@item.PhoneNumber</td>
+                                @* <td>
+                                    <a href="/cpanel/CoffeeCup/Edit/@(item.Id)">
+                                        ویرایش
+                                    </a>
+                                </td> *@
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

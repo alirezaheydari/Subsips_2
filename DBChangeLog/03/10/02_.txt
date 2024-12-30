@@ -1,0 +1,10 @@
+CREATE TABLE [ExclusiveCafeCustomers] (
+    [Id] uniqueidentifier NOT NULL,
+    [CafeId] uniqueidentifier NOT NULL,
+    [CustomerFullName] nvarchar(90) NULL,
+    [CustomerPhoneNumber] nvarchar(20) NOT NULL,
+    [IsActive] bit NOT NULL,
+    [CreateDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ExclusiveCafeCustomers] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ExclusiveCafeCustomers_CafeStations_CafeId] FOREIGN KEY ([CafeId]) REFERENCES [CafeStations] ([Id])
+);

@@ -1,0 +1,9 @@
+CREATE TABLE [CafeStationConfigs] (
+    [Id] uniqueidentifier NOT NULL,
+    [CafeId] uniqueidentifier NOT NULL,
+    [DefaultSmsMsg] nvarchar(256) NULL,
+    [IsSendSms] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_CafeStationConfigs] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_CafeStationConfigs_CafeStations_CafeId] FOREIGN KEY ([CafeId]) REFERENCES [CafeStations] ([Id])
+);

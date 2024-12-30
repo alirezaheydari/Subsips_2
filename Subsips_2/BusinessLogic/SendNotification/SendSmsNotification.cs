@@ -37,4 +37,22 @@ public class SendSmsNotification : ISendSmsNotification
             });
         }
     }
+
+    public ReturnResult<bool> SendDefaultMsgForCafe(string phoneNumber, string msgContext)
+    {
+        try
+        {
+            var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
+            restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
+            restClient.Send("09120655488", fromPhoneNumber, msgContext, false);
+            return ResultFactory.GetGoodResult();
+        }
+        catch (Exception ex)
+        {
+            return ResultFactory.GetBadResult(new string[] {
+                "model is not valid SendOrderToCafe",
+                ex.Message
+            });
+        }
+    }
 }

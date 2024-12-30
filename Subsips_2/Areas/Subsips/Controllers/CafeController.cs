@@ -1,10 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Repository.Helper.Validations;
+using Subsips_2.Areas.CPanel.Models.CafeStation.FormRequest;
 using Subsips_2.Areas.Subsips.Models.Cafe;
 using Subsips_2.BusinessLogic.Cafe;
+using Subsips_2.BusinessLogic.CafeConfig;
 using Subsips_2.BusinessLogic.CoffeeCups;
+using Subsips_2.BusinessLogic.ExclusiveCustomer;
 using Subsips_2.BusinessLogic.Order;
+using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.UserCustomer;
+using System.Security.Claims;
 
 namespace Subsips_2.Areas.Subsips.Controllers;
 
@@ -12,18 +19,22 @@ namespace Subsips_2.Areas.Subsips.Controllers;
 public class CafeController : Controller
 {
     private readonly ICoffeeCupRepository coffeeCups;
-    private readonly IOrderRepository orderRepo;
     private readonly IUserCustomerRepository customerRepo;
     private readonly ICafeStationRepository cafeRepo;
     private readonly ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegister;
+    private readonly IExclusiveCafeCustomerRepository exclusiveCafeCustomerRepository;
+    private readonly ICafeStationConfigRepository cafeStationConfigRepository;
+    private readonly ISendSmsNotification smsSender;
 
-    public CafeController(ICoffeeCupRepository coffeeCups, IOrderRepository orderRepo, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegister, IUserCustomerRepository customerRepo, ICafeStationRepository cafeRepo)
+    public CafeController(ICoffeeCupRepository coffeeCups, ICustomerPhoneRegisterAuthenticationRepository customerPhoneRegister, IUserCustomerRepository customerRepo, ICafeStationRepository cafeRepo, IExclusiveCafeCustomerRepository exclusiveCafeCustomerRepository, ICafeStationConfigRepository cafeStationConfigRepository, ISendSmsNotification smsSender)
     {
         this.coffeeCups = coffeeCups;
-        this.orderRepo = orderRepo;
         this.customerPhoneRegister = customerPhoneRegister;
         this.customerRepo = customerRepo;
         this.cafeRepo = cafeRepo;
+        this.exclusiveCafeCustomerRepository = exclusiveCafeCustomerRepository;
+        this.cafeStationConfigRepository = cafeStationConfigRepository;
+        this.smsSender = smsSender;
     }
 
 
@@ -38,6 +49,53 @@ public class CafeController : Controller
 
 
         return View(res.Result);
+    }
+
+    public IActionResult ExclusiveUser(Guid Id)
+    {
+        var cafe = cafeRepo.Find(Id);
+
+        if (cafe.IsFailed)
+        {
+            ViewData["ErrorValidation"] = "مشکلی پیش آمده";
+            return View();
+        }
+
+        ViewData["CafeId"] = cafe.Result.Id;
+
+        ViewData["CafeName"] = cafe.Result.Name;
+        return View();
+    }
+    [HttpPost]
+    public async Task<IActionResult> ExclusiveUser(ExclusiveUserFormRequest formRequest)
+    {
+        formRequest.PhoneNumber = PhoneNumberValidation.GetPhoneNumberWithoutZero(formRequest.PhoneNumber);
+
+        if (!PhoneNumberValidation.IsValid(formRequest.PhoneNumber))
+        {
+            ViewData["ErrorValidation"] = "لطفا شماره همراه را به درستی وارد نمایید";
+            return View();
+        }
+
+        var cafe = cafeRepo.Find(formRequest.CafeId);
+
+        if (cafe.IsFailed)
+        {
+            ViewData["ErrorValidation"] = "مشکلی پیش آمده";
+            return View();
+        }
+
+        await exclusiveCafeCustomerRepository.Add(formRequest.CafeId, formRequest.PhoneNumber, formRequest.FullName);
+        var config = cafeStationConfigRepository.FindActiveByCafeId(formRequest.CafeId);
+        if (config is null && config.IsFailed)
+            return RedirectToAction("Index", "Home");
+
+        if (config.Result.IsSendSms)
+        {
+            smsSender.SendDefaultMsgForCafe(formRequest.PhoneNumber, config.Result.DefaultSmsMsg);
+        }
+
+        return RedirectToAction("Index", "Home");
     }
 
     public IActionResult Select(Guid coffeeId, Guid orderId, Guid cafeId)

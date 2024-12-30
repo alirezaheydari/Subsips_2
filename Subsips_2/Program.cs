@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Subsips_2.BusinessLogic.Cafe;
+using Subsips_2.BusinessLogic.CafeConfig;
 using Subsips_2.BusinessLogic.CoffeeCups;
+using Subsips_2.BusinessLogic.ExclusiveCustomer;
 using Subsips_2.BusinessLogic.Order;
 using Subsips_2.BusinessLogic.SendNotification;
 using Subsips_2.BusinessLogic.SubwayStation;
@@ -27,6 +29,8 @@ builder.Services.AddTransient<ICafeStationRepository, CafeStationRepository>();
 builder.Services.AddTransient<ICustomerPhoneRegisterAuthenticationRepository, CustomerPhoneRegisterAuthenticationRepository>();
 builder.Services.AddTransient<ICafeStationAspNetUserRepository, CafeStationAspNetUserRepository>();
 builder.Services.AddTransient<ITimeSheetShiftCafeRepository, TimeSheetShiftCafeRepository>();
+builder.Services.AddTransient<IExclusiveCafeCustomerRepository, ExclusiveCafeCustomerRepository>();
+builder.Services.AddTransient<ICafeStationConfigRepository, CafeStationConfigRepository>();
 
 
 var app = builder.Build();

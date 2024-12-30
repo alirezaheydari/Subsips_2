@@ -34,8 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/AddExclusiveUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZEV4Y2x1c2l2ZVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/AddTimeSheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZFRpbWVTaGVldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/ExclusiveUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEV4Y2x1c2l2ZVVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/TimeSheets.cshtml]
@@ -100,6 +108,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/ConfirmedOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXENvbmZpcm1lZE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/ExclusiveUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXEV4Y2x1c2l2ZVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/Menu.cshtml]
