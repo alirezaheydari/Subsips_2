@@ -87,7 +87,7 @@ public class CafeController : Controller
 
         await exclusiveCafeCustomerRepository.Add(formRequest.CafeId, formRequest.PhoneNumber, formRequest.FullName);
         var config = cafeStationConfigRepository.FindActiveByCafeId(formRequest.CafeId);
-        if (config is null && config.IsFailed)
+        if (config is null || config.IsFailed)
             return RedirectToAction("Index", "Home");
 
         if (config.Result.IsSendSms)

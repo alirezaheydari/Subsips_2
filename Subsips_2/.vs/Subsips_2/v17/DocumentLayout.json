@@ -3,6 +3,45 @@
   "WorkspaceRootPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\exclusivecustomer\\exclusivecafecustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\exclusivecustomer\\exclusivecafecustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\943866804c986b3f1c185b0aaf5a6b2eb778d67c9141c5459bf5f86981d49a11\\AsyncTaskMethodBuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5f05eae9e701b8794859e329bd2464d9f76bcf8f9bd0d3934b05b7f581ff065b\\ResourceInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5af38de1500880bdc4e9cb3784c250111fdfcdc4a8a93bde753f983cfb947ca0\\ControllerActionInvoker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5cbea72537ce83ad8d2e94cdf08acbe1b5b9680728551f045509cd93ffd44716\\ValueTask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\cafe\\exclusiveuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\cafe\\exclusiveuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\usercustomer\\phonenumberregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\usercustomer\\phonenumberregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\cafe\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\subsips\\views\\cafe\\confirmedorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\subsips\\views\\cafe\\confirmedorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\cafestation\\cafeconfig.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\cafestation\\cafeconfig.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -34,24 +73,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAkwCAAAABZAAAA",
+              "DocumentIndex": 8,
+              "Title": "PhoneNumberRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "RelativeToolTip": "Areas\\Subsips\\Views\\UserCustomer\\PhoneNumberRegister.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T21:30:54.864Z",
+              "WhenOpened": "2024-12-30T21:39:51.818Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExclusiveUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\ExclusiveUser.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Cafe\\ExclusiveUser.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\ExclusiveUser.cshtml",
+              "RelativeToolTip": "Areas\\Subsips\\Views\\Cafe\\ExclusiveUser.cshtml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAkwDAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T21:39:36.35Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsyncTaskMethodBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\943866804c986b3f1c185b0aaf5a6b2eb778d67c9141c5459bf5f86981d49a11\\AsyncTaskMethodBuilder.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\943866804c986b3f1c185b0aaf5a6b2eb778d67c9141c5459bf5f86981d49a11\\AsyncTaskMethodBuilder.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\943866804c986b3f1c185b0aaf5a6b2eb778d67c9141c5459bf5f86981d49a11\\AsyncTaskMethodBuilder.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\943866804c986b3f1c185b0aaf5a6b2eb778d67c9141c5459bf5f86981d49a11\\AsyncTaskMethodBuilder.cs [Read Only]",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAkwIMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:46:25.429Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResourceInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5f05eae9e701b8794859e329bd2464d9f76bcf8f9bd0d3934b05b7f581ff065b\\ResourceInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5f05eae9e701b8794859e329bd2464d9f76bcf8f9bd0d3934b05b7f581ff065b\\ResourceInvoker.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5f05eae9e701b8794859e329bd2464d9f76bcf8f9bd0d3934b05b7f581ff065b\\ResourceInvoker.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5f05eae9e701b8794859e329bd2464d9f76bcf8f9bd0d3934b05b7f581ff065b\\ResourceInvoker.cs [Read Only]",
+              "ViewState": "AQIAALABAAAAAAAAAAAkwMIBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:46:22.58Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ControllerActionInvoker.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5af38de1500880bdc4e9cb3784c250111fdfcdc4a8a93bde753f983cfb947ca0\\ControllerActionInvoker.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5af38de1500880bdc4e9cb3784c250111fdfcdc4a8a93bde753f983cfb947ca0\\ControllerActionInvoker.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5af38de1500880bdc4e9cb3784c250111fdfcdc4a8a93bde753f983cfb947ca0\\ControllerActionInvoker.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5af38de1500880bdc4e9cb3784c250111fdfcdc4a8a93bde753f983cfb947ca0\\ControllerActionInvoker.cs [Read Only]",
+              "ViewState": "AQIAAOYBAAAAAAAAAAAwwPQBAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:46:03.935Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ValueTask.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5cbea72537ce83ad8d2e94cdf08acbe1b5b9680728551f045509cd93ffd44716\\ValueTask.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5cbea72537ce83ad8d2e94cdf08acbe1b5b9680728551f045509cd93ffd44716\\ValueTask.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\5cbea72537ce83ad8d2e94cdf08acbe1b5b9680728551f045509cd93ffd44716\\ValueTask.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5cbea72537ce83ad8d2e94cdf08acbe1b5b9680728551f045509cd93ffd44716\\ValueTask.cs [Read Only]",
+              "ViewState": "AQIAANUBAAAAAAAAAAAUwOMBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:46:02.891Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActionMethodExecutor.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\1cc6d2a634203e0de348b5980fee97b87977d5074b436e24ff974f8438968be4\\ActionMethodExecutor.cs [Read Only]",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAUwKsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T21:46:01.57Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "CafeConfigFormRequest.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Models\\CafeStation\\FormRequest\\CafeConfigFormRequest.cs",
               "RelativeDocumentMoniker": "Areas\\CPanel\\Models\\CafeStation\\FormRequest\\CafeConfigFormRequest.cs",
@@ -64,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "ICafeStationConfigRepository.cs.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CafeConfig\\ICafeStationConfigRepository.cs.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\CafeConfig\\ICafeStationConfigRepository.cs.cs",
@@ -77,7 +196,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "CafeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\CafeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Controllers\\CafeController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Controllers\\CafeController.cs",
+              "RelativeToolTip": "Areas\\Subsips\\Controllers\\CafeController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwFwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T20:40:59.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CafeStationConfigRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\CafeConfig\\CafeStationConfigRepository.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\CafeConfig\\CafeStationConfigRepository.cs",
@@ -91,6 +223,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ExclusiveCafeCustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\ExclusiveCustomer\\ExclusiveCafeCustomerRepository.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\ExclusiveCustomer\\ExclusiveCafeCustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\ExclusiveCustomer\\ExclusiveCafeCustomerRepository.cs",
+              "RelativeToolTip": "BusinessLogic\\ExclusiveCustomer\\ExclusiveCafeCustomerRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:53:29.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwCAAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T21:30:54.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConfirmedOrder.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\ConfirmedOrder.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Cafe\\ConfirmedOrder.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\ConfirmedOrder.cshtml",
+              "RelativeToolTip": "Areas\\Subsips\\Views\\Cafe\\ConfirmedOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T21:39:43.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
+              "RelativeToolTip": "Areas\\Subsips\\Views\\Cafe\\Menu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T21:39:46.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CafeStationController.cs",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CafeStationController.cs",
               "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\CafeStationController.cs",
@@ -103,13 +287,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "CafeConfig.cshtml",
               "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
               "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
               "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
               "RelativeToolTip": "Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABCAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-30T20:36:03.483Z",
               "EditorCaption": ""
