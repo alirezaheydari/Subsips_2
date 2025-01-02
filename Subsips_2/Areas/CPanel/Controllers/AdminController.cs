@@ -38,7 +38,6 @@ public class AdminController : Controller
         }).ToList();
         return View(model);
     }
-
     public async Task<IActionResult> UserConfirmed(string id)
     {
         var model = _userManager.Users.Where(x => x.Id == id).FirstOrDefault();
@@ -50,7 +49,6 @@ public class AdminController : Controller
 
         return RedirectToAction("CafeUsers");
     }
-
     public IActionResult Stations()
     {
         var stattions = this.subwayStationRepository.GetAll();
@@ -105,8 +103,6 @@ public class AdminController : Controller
             return NotFound();
         return View();
     }
-
-
     public IActionResult Edit(string id)
     {
         var model = _userManager.Users.Where(x => x.Id == id).FirstOrDefault();
