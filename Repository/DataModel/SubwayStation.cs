@@ -12,8 +12,7 @@ public class SubwayStation
     [StringLength(256)]
     public string? Description { get; set; }
     public Guid? CafeId { get; set; }
-
-
+    public bool IsActive { get; set; }
     public CafeStation? Cafe { get; set; }
 }
 

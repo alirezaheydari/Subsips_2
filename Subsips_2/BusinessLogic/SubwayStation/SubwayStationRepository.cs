@@ -13,14 +13,14 @@ public class SubwayStationRepository : ISubwayStationRepository
         _context = context;
     }
 
-    public async Task<ReturnResult<bool>> Add(string name, SubwayLines line, string description, Guid cafeId)
+    public async Task<ReturnResult<bool>> Add(string name, SubwayLines line, string? description)
     {
         _context.SubwayStations.Add(new Repository.DataModel.SubwayStation
         {
             Name = name,
             Line = (byte)line,
-            CafeId = cafeId,
-            Description = description
+            Description = description,
+            IsActive = false
         });
 
 
@@ -35,11 +35,60 @@ public class SubwayStationRepository : ISubwayStationRepository
         return ResultFactory.GetGoodResult(_context.SubwayStations.ToList());
     }
 
+    public async Task<ReturnResult<bool>> ChagneStatus(Guid id)
+    {
+        var station = _context.SubwayStations.Find(id);
+
+        if (station is null)
+            return ResultFactory.GetBadResult(new string[]
+            {
+                "Model is not valid"
+            });
+
+        station.IsActive = !station.IsActive;
+
+        await _context.SaveChangesAsync();
+
+
+        return ResultFactory.GetGoodResult();
+    }
+    public async Task<ReturnResult<bool>> Delete(Guid id)
+    {
+        var station = _context.SubwayStations.Find(id);
+
+        if (station is null)
+            return ResultFactory.GetBadResult(new string[]
+            {
+                "Model is not valid"
+            });
+
+        _context.SubwayStations.Remove(station);
+
+        await _context.SaveChangesAsync();
+
+
+        return ResultFactory.GetGoodResult();
+    }
+     public ReturnResult<Repository.DataModel.SubwayStation> Find(Guid id)
+    {
+        var res = _context.SubwayStations.Find(id);
+
+        if (res is null)
+        {
+            return ResultFactory.GetBadResult<Repository.DataModel.SubwayStation>(new string[]
+            {
+                "Model is not valid"
+            });
+        }
+
+        return ResultFactory.GetGoodResult(res);
+    }
+
 
 
     public ReturnResult<List<SubwayStationViewModel>> GetViewModelAll()
     {
-        return ResultFactory.GetGoodResult(_context.SubwayStations.Select(x => new SubwayStationViewModel
+        return ResultFactory.GetGoodResult(_context.SubwayStations.Where(x => x.Cafe != null).Select(x => new SubwayStationViewModel
         {
             CafeName = x.Cafe.Name,
             CafeId = x.CafeId,

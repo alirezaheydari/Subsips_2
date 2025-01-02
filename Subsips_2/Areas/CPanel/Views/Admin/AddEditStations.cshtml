@@ -1,0 +1,49 @@
+﻿@using Repository.DataModel
+@using Repository.Helper
+@using Subsips_2.Areas.CPanel.Models.Admin.FormRequest
+@model AddEditStationFormRequest
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+
+<form method="post" class="mdl-grid coffeecupForm">
+            <input disabled class="mdl-textfield__input" type="hidden" id="Id" name="Id" value="@(Model?.Id ?? Guid.Empty)" />
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <input class="mdl-textfield__input" type="text" id="name" name="name" value="@(Model?.Name ?? string.Empty)" />
+            <label class="mdl-textfield__label" for="name">نام</label>
+        </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <label for="line" class="mdl-textfield__label">روز هفته</label>
+            <select id="line" name="line" class="mdl-textfield__input" required>
+                @foreach (var line in Enum.GetValues(typeof(SubwayLines)))
+                {
+                    <option @((((SubwayLines)line) == Model?.Line) ? "selected" : "") value="@line">@(EnumHelper<SubwayLines>.GetDisplayValue((SubwayLines)line))</option>
+                }
+            </select>
+        </div>
+    </div>
+
+
+    <!-- Is Active -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isActive">
+            <input type="checkbox" id="isActive" name="IsActive" value="true" class="mdl-checkbox__input" />
+            فعال
+        </label>
+    </div>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised w-100 mdl-button--colored">
+        ثبت
+    </button>
+</form>

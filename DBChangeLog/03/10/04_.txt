@@ -1,0 +1,1 @@
+ALTER TABLE [SubwayStations] ADD [IsActive] bit NOT NULL DEFAULT CAST(0 AS bit);
