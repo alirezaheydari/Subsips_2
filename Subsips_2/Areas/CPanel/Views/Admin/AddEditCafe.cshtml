@@ -1,0 +1,64 @@
+﻿@using Subsips_2.Areas.CPanel.Models.Admin.ModelView
+@model AddEditCafeViewModel
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+@section Style {
+    <link href="~/css/cpanel/coffee_cup/add.css" rel="stylesheet" />
+
+}
+
+
+<form method="post" class="mdl-grid coffeecupForm">
+    <input disabled class="mdl-textfield__input" type="hidden" id="Id" name="Id" value="@(Model?.Id ?? Guid.Empty)" />
+
+    <!-- نام -->
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <input class="mdl-textfield__input" required type="text" id="name" name="name" value="@(Model?.Name ?? string.Empty)" />
+            <label class="mdl-textfield__label" for="name">نام</label>
+        </div>
+    </div>
+
+    <!-- شماره همراه -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <input type="tel" id="phoneNumber" required name="phoneNumber" class="mdl-textfield__input" maxlength="20" value="@(Model?.PhoneNumber ?? string.Empty)" required />
+            <label class="mdl-textfield__label" for="phoneNumber">شماره همراه</label>
+        </div>
+    </div>
+
+    <!-- ایستگاه -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <label for="stationId" class="mdl-textfield__label">ایستگاه</label>
+            <select id="stationId" name="stationId" class="mdl-textfield__input" required>
+                @foreach (var station in Model?.Stations)
+                {
+                    <option @(station.IsSelected ? "selected" : "") value="@station.Id">@(station.DisplayName)</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label w-100">
+            <input class="mdl-textfield__input" type="text" id="description" name="description" value="@(Model?.Description ?? string.Empty)" />
+            <label class="mdl-textfield__label" for="description">توضیحات</label>
+        </div>
+    </div>
+
+    <!-- Is Active -->
+    <div class="mdl-cell mdl-cell--6-col">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isActive">
+            <input type="checkbox" id="isActive" name="IsActive" value="true" class="mdl-checkbox__input" />
+            فعال
+        </label>
+    </div>
+
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised w-100 mdl-button--colored">
+        ثبت
+    </button>
+</form>

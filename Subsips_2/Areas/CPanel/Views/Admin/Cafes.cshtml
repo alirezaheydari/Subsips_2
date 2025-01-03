@@ -1,0 +1,40 @@
+﻿@using Subsips_2.Areas.CPanel.Models.Admin.ModelView
+@model CafesViewModel
+@{
+    Layout = "~/Areas/Cpanel/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table w-100 table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">اسم</th>
+                            <th scope="col">شماره</th>
+                            <th scope="col">ایستگاه</th>
+                            <th scope="col">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <th scope="row"></th>
+                                <td>@item.Name</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.StationName</td>
+                                <td>
+                                    <a href="/Cpanel/Admin/AddEditCafe/@(item.Id)">ویرایش</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

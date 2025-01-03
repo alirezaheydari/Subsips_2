@@ -21,4 +21,20 @@ public class CafeStation
     public List<ExclusiveCafeCustomer> ExclusiveUsers { get; set; } = [];
 
     public List<TimeSheetShiftCafe> TimeSheetsShift { get; set; } = [];
+
+    public static CafeStation Create(string name, string phoneNumber, Guid stationId, string description)
+    {
+        var res = new CafeStation
+        {
+            Description = description,
+            Name = name,
+            PhoneNumber = phoneNumber,
+            StationId = stationId,
+        };
+
+
+
+        return res;
+    }
+
 }

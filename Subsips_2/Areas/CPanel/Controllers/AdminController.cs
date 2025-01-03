@@ -97,7 +97,7 @@ public class AdminController : Controller
     [HttpPost]
     public async Task<IActionResult> AddEditStations(AddEditStationFormRequest formRequest)
     {
-
+        // tODO : should update 
         var stattions = await this.subwayStationRepository.Add(formRequest.Name, formRequest.Line, formRequest.Description);
         if (stattions.IsFailed)
             return NotFound();
@@ -129,5 +129,69 @@ public class AdminController : Controller
 
         return RedirectToAction("CafeUsers");
     }
+    public IActionResult Cafes()
+    {
+        var cafe = cafeStationRepository.GetAll();
+        return View(new CafesViewModel
+        {
+            Items = cafe.Result.Select(x => new CafeItemViewModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                PhoneNumber = x.PhoneNumber,
+                StationName = x.Station?.Name ?? "-"
+            }).ToList()
+        });
+    }
+    public IActionResult AddEditCafe(Guid id)
+    {
 
+        var stations = subwayStationRepository.GetAll();
+
+        if (stations is null || stations.IsFailed)
+            return NotFound();
+
+        if (id == Guid.Empty)
+            return View(new AddEditCafeViewModel
+            {
+                Stations = stations.Result.Select(x => new AddEditStationsCafeItem
+                {
+                    Id = x.Id,
+                    DisplayName = x.Name,
+                    IsSelected = false
+                }).ToList()
+            });
+
+        var cafe = cafeStationRepository.Find(id);
+
+        if (cafe is null || cafe.IsFailed)
+            return NotFound();
+
+        return View(new AddEditCafeViewModel
+        {
+            Id = id,
+            Description = cafe.Result.Description,
+            Name = cafe.Result.Name,
+            PhoneNumber = cafe.Result.PhoneNumber,
+            StationId = cafe.Result.StationId,
+            Stations = stations.Result.Select(x => new AddEditStationsCafeItem { 
+                Id = x.Id,
+                DisplayName = x.Name,
+                IsSelected = x.Id == cafe.Result.StationId
+            }).ToList()
+        });
+    }
+    [HttpPost]
+    public async Task<IActionResult> AddEditCafe(AddEditCafeViewModel formRequest)
+    {
+        if (formRequest is null)
+            return NotFound();
+
+        if (formRequest.Id == Guid.Empty)
+            await cafeStationRepository.Add(formRequest.Name, formRequest.PhoneNumber, formRequest.StationId, formRequest.Description);
+        else
+            await cafeStationRepository.Update(formRequest.Id, formRequest.Name, formRequest.PhoneNumber, formRequest.StationId, formRequest.Description);
+
+        return RedirectToAction("Cafes");
+    }
 }

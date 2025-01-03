@@ -34,7 +34,7 @@ public class SubwayStationRepository : ISubwayStationRepository
     {
         return ResultFactory.GetGoodResult(_context.SubwayStations.ToList());
     }
-
+    
     public async Task<ReturnResult<bool>> ChagneStatus(Guid id)
     {
         var station = _context.SubwayStations.Find(id);
@@ -88,7 +88,7 @@ public class SubwayStationRepository : ISubwayStationRepository
 
     public ReturnResult<List<SubwayStationViewModel>> GetViewModelAll()
     {
-        return ResultFactory.GetGoodResult(_context.SubwayStations.Where(x => x.Cafe != null).Select(x => new SubwayStationViewModel
+        return ResultFactory.GetGoodResult(_context.SubwayStations.Where(x => x.Cafe != null && x.IsActive).Select(x => new SubwayStationViewModel
         {
             CafeName = x.Cafe.Name,
             CafeId = x.CafeId,
