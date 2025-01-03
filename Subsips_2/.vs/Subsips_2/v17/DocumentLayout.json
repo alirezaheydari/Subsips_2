@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\cafe\\cafestationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\cafe\\cafestationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\cafestation\\cafeconfig.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\cafestation\\cafeconfig.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\businesslogic\\subwaystation\\subwaystationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:businesslogic\\subwaystation\\subwaystationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\views\\admin\\addeditcafe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\views\\admin\\addeditcafe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|c:\\users\\ghmzf\\source\\repos\\subsips 2.0\\subsips_2\\areas\\cpanel\\controllers\\cafestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3F6068-0BE6-4CA0-9FFB-543AA9CE4F3B}|Subsips_2.csproj|solutionrelative:areas\\cpanel\\controllers\\cafestationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Areas\\CPanel\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAswL4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T11:21:16.246Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CafeStationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\Cafe\\CafeStationRepository.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Cafe\\CafeStationRepository.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\Cafe\\CafeStationRepository.cs",
-              "RelativeToolTip": "BusinessLogic\\Cafe\\CafeStationRepository.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAnwF8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:14:53.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SubwayStationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
-              "RelativeToolTip": "BusinessLogic\\SubwayStation\\SubwayStationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:00:27.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddEditCafe.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Admin\\AddEditCafe.cshtml",
-              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\Admin\\AddEditCafe.cshtml",
-              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\Admin\\AddEditCafe.cshtml",
-              "RelativeToolTip": "Areas\\CPanel\\Views\\Admin\\AddEditCafe.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAmwCQAAAApAAAA",
+              "Title": "CafeConfig.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
+              "RelativeToolTip": "Areas\\CPanel\\Views\\CafeStation\\CafeConfig.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-03T12:51:00.238Z",
+              "WhenOpened": "2025-01-03T16:27:56.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CafeStationController.cs",
+              "DocumentMoniker": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CafeStationController.cs",
+              "RelativeDocumentMoniker": "Areas\\CPanel\\Controllers\\CafeStationController.cs",
+              "ToolTip": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Areas\\CPanel\\Controllers\\CafeStationController.cs",
+              "RelativeToolTip": "Areas\\CPanel\\Controllers\\CafeStationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:27:11.443Z",
               "EditorCaption": ""
             }
           ]

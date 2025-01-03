@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Subsips_2;
 using Subsips_2.BusinessLogic.Cafe;
 using Subsips_2.BusinessLogic.CafeConfig;
 using Subsips_2.BusinessLogic.CoffeeCups;
@@ -14,7 +15,7 @@ var connectionString = builder.Configuration.GetConnectionString("Subsips_2Conte
 
 builder.Services.AddDbContext<Subsips_2Context>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<Subsips_2Context>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>().AddEntityFrameworkStores<Subsips_2Context>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -34,6 +35,22 @@ builder.Services.AddTransient<ICafeStationConfigRepository, CafeStationConfigRep
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    try
+    {
+        var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+        await SeedData.Initialize(services, userManager);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred seeding the DB.");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
