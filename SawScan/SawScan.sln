@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SawScan", "SawScan.csproj", "{477B4F4C-946B-414D-9036-0EAA42C523EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{477B4F4C-946B-414D-9036-0EAA42C523EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477B4F4C-946B-414D-9036-0EAA42C523EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477B4F4C-946B-414D-9036-0EAA42C523EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477B4F4C-946B-414D-9036-0EAA42C523EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9A2AF9A-2AA8-4C9D-9849-F1EE2ADF32B4}
+	EndGlobalSection
+EndGlobal
