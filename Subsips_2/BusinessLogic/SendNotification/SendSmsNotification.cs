@@ -10,6 +10,7 @@ public class SendSmsNotification : ISendSmsNotification
     private static string _melliPayamkPassword = "45089b4c-02ea-4ff1-8746-b4a3c029d08e";
     private static string _melliPayamkUsername = "09120655488";
     private static int _melliPayamkBodyIdForOTP = 274619;
+    private static int _melliPayamkBodyIdForOrder = 279240;
 
     public ReturnResult<bool> SendVerificationCode(string phoneNumber, string code)
     {
@@ -23,8 +24,11 @@ public class SendSmsNotification : ISendSmsNotification
         try
         {
             var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
+            var text = string.Join(';', new string[] { coffeeName, fullName, userPhoneNumber });
+
+            var res = restClient.SendByBaseNumber(text, phoneNumber, _melliPayamkBodyIdForOrder);
             var msgContext = $"به نام  {fullName} با شماره {userPhoneNumber} یک سفارش  {coffeeName} ثبت شد";
-            var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
+            //var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
             msgContext = msgContext + $"\r\n به شماره {phoneNumber}";
             restClient.Send("09120655488", fromPhoneNumber, msgContext, false);
             return ResultFactory.GetGoodResult();
