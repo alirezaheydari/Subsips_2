@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4ue45J89am/GdvSGM5B1BHyhKOO1HuKcUzgiskNZY2U=",
+  "Hash": "w+wN8f9mri9vl186KWum/PjDIb9H4e/x35oHSDXM4eA=",
   "Source": "Subsips_2",
   "BasePath": "_content/Subsips_2",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\cpanel\\coffee_cup\\add.css"
+    },
+    {
+      "Identity": "C:\\Users\\Ghmzf\\source\\repos\\proj\\subsips\\Subsips_2\\wwwroot\\css\\cpanel\\coffee_cup\\index.css",
+      "SourceId": "Subsips_2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ghmzf\\source\\repos\\proj\\subsips\\Subsips_2\\wwwroot\\",
+      "BasePath": "_content/Subsips_2",
+      "RelativePath": "css/cpanel/coffee_cup/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\cpanel\\coffee_cup\\index.css"
     },
     {
       "Identity": "C:\\Users\\Ghmzf\\source\\repos\\proj\\subsips\\Subsips_2\\wwwroot\\css\\cpanel\\order\\index.css",

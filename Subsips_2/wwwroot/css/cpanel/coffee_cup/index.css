@@ -1,0 +1,5 @@
+﻿div.container.mt-4 {
+    padding-bottom: 40px;
+    z-index: 2;
+    background-color: var(--bright-primary-color);
+}

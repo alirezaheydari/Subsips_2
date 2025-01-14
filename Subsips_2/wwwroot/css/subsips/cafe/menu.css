@@ -5,3 +5,6 @@ div.btn-bg-select a {
 div.btn-bg-select {
     background-color: var(--secondary-color);
 }
+div.mb-2 div.row {
+    padding-bottom: 40px;
+}
