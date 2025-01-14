@@ -17,187 +17,187 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Subsips_2
 build_property.RootNamespace = Subsips_2
-build_property.ProjectDir = C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2\
+build_property.ProjectDir = C:\Users\Ghmzf\source\repos\proj\subsips\Subsips_2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ghmzf\source\repos\SubSips 2.0\Subsips_2
+build_property.MSBuildProjectDirectory = C:\Users\Ghmzf\source\repos\proj\subsips\Subsips_2
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/AddEditCafe.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/AddEditCafe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXEFkZEVkaXRDYWZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/AddEditStations.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/AddEditStations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXEFkZEVkaXRTdGF0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/Cafes.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/Cafes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXENhZmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/CafeUsers.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/CafeUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXENhZmVVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/Edit.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Admin/Stations.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Admin/Stations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEFkbWluXFN0YXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/AddExclusiveUser.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CafeStation/AddExclusiveUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZEV4Y2x1c2l2ZVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/AddTimeSheet.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CafeStation/AddTimeSheet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEFkZFRpbWVTaGVldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/CafeConfig.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CafeStation/CafeConfig.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXENhZmVDb25maWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/ExclusiveUsers.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CafeStation/ExclusiveUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXEV4Y2x1c2l2ZVVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CafeStation/TimeSheets.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CafeStation/TimeSheets.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENhZmVTdGF0aW9uXFRpbWVTaGVldHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CoffeeCup/Add.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CoffeeCup/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENvZmZlZUN1cFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/CoffeeCup/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/CoffeeCup/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXENvZmZlZUN1cFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Home/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Order/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXE9yZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/Shared/_Layout.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/SubwayStation/Add.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/SubwayStation/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXFN1YndheVN0YXRpb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/CPanel/Views/SubwayStation/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/CPanel/Views/SubwayStation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ1BhbmVsXFZpZXdzXFN1YndheVN0YXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/ConfirmedOrder.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Cafe/ConfirmedOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXENvbmZpcm1lZE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/ExclusiveUser.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Cafe/ExclusiveUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXEV4Y2x1c2l2ZVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Cafe/Menu.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Cafe/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xDYWZlXE1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Home/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Home/UserRegister.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Home/UserRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xIb21lXFVzZXJSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/Shared/_Layout.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/UserCustomer/GetUserOrders.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/UserCustomer/GetUserOrders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xVc2VyQ3VzdG9tZXJcR2V0VXNlck9yZGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/UserCustomer/PhoneNumberRegister.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/UserCustomer/PhoneNumberRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xVc2VyQ3VzdG9tZXJcUGhvbmVOdW1iZXJSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/UserCustomer/ShowStatusOrder.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/UserCustomer/ShowStatusOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xVc2VyQ3VzdG9tZXJcU2hvd1N0YXR1c09yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/_ViewImports.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Areas/Subsips/Views/_ViewStart.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Areas/Subsips/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3Vic2lwc1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Home/Index.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Home/Privacy.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Shared/Error.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/_ViewImports.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/_ViewStart.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ghmzf/source/repos/SubSips 2.0/Subsips_2/Views/Shared/_Layout.cshtml]
+[C:/Users/Ghmzf/source/repos/proj/subsips/Subsips_2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hoebxsagdh

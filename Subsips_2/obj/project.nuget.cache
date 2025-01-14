@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6r8QFsoXIyN7ALbSTzU7wL3aw3JNcZyrzLz5y66Q43yfUpbMeipNWJgNqk5r3HemzJXgW7dScHuxt4qYuJ7cig==",
+  "dgSpecHash": "mxkBY+b+LSpDhugL5KEpZiE1GT61MeDh3+q7Qv1zkkgosTo1GG2+Q5UsYMNZnuolo1SrMC6Kk8AkqmJ1YBn2eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ghmzf\\source\\repos\\SubSips 2.0\\Subsips_2\\Subsips_2.csproj",
+  "projectFilePath": "C:\\Users\\Ghmzf\\source\\repos\\proj\\subsips\\Subsips_2\\Subsips_2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ghmzf\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Ghmzf\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
