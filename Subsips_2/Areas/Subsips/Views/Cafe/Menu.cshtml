@@ -25,7 +25,7 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">
-                            <strong>قیمت: </strong> @(item.PriceOfCoffee) تومن
+                            <strong>قیمت: </strong> @((int)item.PriceOfCoffee) تومن
                         </p>
                         <div class="d-flex justify-content-between w-100 btn-bg-select ">
                             <a href="/Subsips/Cafe/Select?CoffeeId=@(item.CoffeeId)&OrderId=@(ViewData["OrderId"])&CafeId=@(item.CafeId)" class="btn w-100 bg-btn-secondary">انتخاب</a>
