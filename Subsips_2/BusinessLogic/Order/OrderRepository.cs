@@ -1,8 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
-using Microsoft.IdentityModel.Tokens;
-using NuGet.Protocol;
+﻿using Microsoft.IdentityModel.Tokens;
 using Repository.DataModel;
 using Repository.Helper;
 using Subsips_2.Areas.CPanel.Models.Order.Filter;
@@ -21,7 +17,7 @@ public class OrderRepository : IOrderRepository
     }
 
 
-    public async Task<ReturnResult<Repository.DataModel.Order>> MakeNewOrder(Guid orderId, string description, Guid cafeId, Guid coffeeId, Guid customerId)
+    public async Task<ReturnResult<Repository.DataModel.Order>> MakeNewOrder(Guid orderId, string description, Guid cafeId, Guid coffeeId, Guid customerId, EstimateDelivery estimate)
     {
         context.CoffeeCupOrders.Add(new Repository.DataModel.CoffeeCupOrder
         {
@@ -30,7 +26,10 @@ public class OrderRepository : IOrderRepository
             Count = 1
         });
 
-        var newOrder = Repository.DataModel.Order.Create(orderId, description, cafeId,  customerId);
+        var cafe = context.CafeStations.Find(cafeId);
+
+
+        var newOrder = Repository.DataModel.Order.Create(orderId, description, cafeId,  customerId, estimate, cafe.StationId);
 
         context.Orders.Add(newOrder);
 

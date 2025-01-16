@@ -1,4 +1,5 @@
 ﻿using mpNuget;
+using Repository.DataModel;
 using Repository.Helper;
 
 namespace Subsips_2.BusinessLogic.SendNotification;
@@ -19,15 +20,16 @@ public class SendSmsNotification : ISendSmsNotification
         return ResultFactory.GetGoodResult();
     }
 
-    public ReturnResult<bool> SendOrderToCafe(string phoneNumber, string coffeeName, string fullName, string userPhoneNumber)
+    public ReturnResult<bool> SendOrderToCafe(string phoneNumber, string coffeeName, string fullName, string userPhoneNumber, EstimateDelivery estimate)
     {
         try
         {
             var restClient = new RestClient(_melliPayamkUsername, _melliPayamkPassword);
-            var text = string.Join(';', new string[] { coffeeName, fullName, userPhoneNumber });
+            var tempCoffeeName = $"{coffeeName} {GetEstimateDelivery(estimate)}";
+            var text = string.Join(';', new string[] { tempCoffeeName, fullName, userPhoneNumber });
 
             var res = restClient.SendByBaseNumber(text, phoneNumber, _melliPayamkBodyIdForOrder);
-            var msgContext = $"به نام  {fullName} با شماره {userPhoneNumber} یک سفارش  {coffeeName} ثبت شد";
+            var msgContext = $"به نام  {fullName} با شماره {userPhoneNumber} یک سفارش  {tempCoffeeName} ثبت شد";
             //var res = restClient.Send(phoneNumber, fromPhoneNumber, msgContext, false);
             msgContext = msgContext + $"\r\n به شماره {phoneNumber}";
             restClient.Send("09120655488", fromPhoneNumber, msgContext, false);
@@ -40,6 +42,11 @@ public class SendSmsNotification : ISendSmsNotification
                 ex.Message
             });
         }
+    }
+
+    private static string GetEstimateDelivery(EstimateDelivery estimate)
+    {
+        return estimate == EstimateDelivery.FiveMin ? "5 دقیقه" : "10 دقیقه";
     }
 
     public ReturnResult<bool> SendDefaultMsgForCafe(string phoneNumber, string msgContext)

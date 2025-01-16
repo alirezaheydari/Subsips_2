@@ -18,14 +18,14 @@
         <div class="border rounded p-4 shadow-sm">
             <!-- Order Summary -->
             <div class=" order-title-section mb-4">
-                <p>زمان ثبت: <span id="orderDate">@Model.CreateOrderTime.ToString("hh:mm") </span></p>
+                <p>زمان ثبت: <span id="orderDate">@Model.CreateOrderTime.ToString("HH:mm") </span></p>
                 <p><strong>وضعیت فعلی:</strong> @(statusDisplayName)</p>
                 <img style="" src="~/img/order/@(Model.GetImageStatusOrder()).webp" />
             </div>
             <!-- Order Status Details -->
             <div class="order-detail-section">
                 <p>قهوه : <span id="deliveryAddress">@Model.CoffeeName</span></p>
-                <p>قیمت: <span id="deliveryAddress">@Model.CoffeePrice</span></p>
+                <p>قیمت: <span id="deliveryAddress">@((int)Model.CoffeePrice)</span></p>
                 <p>ایستگاه تحویل: <span id="deliveryAddress">@Model.StationCafeName</span></p>
                 <button class="w-100 call-cafe mb-3" onclick="window.open('tel:@("0"+Model.CafePhoneNumber)');"
                         style="padding: 10px 20px; font-size: 16px; color: white; border: none; border-radius: 5px; cursor: pointer;">

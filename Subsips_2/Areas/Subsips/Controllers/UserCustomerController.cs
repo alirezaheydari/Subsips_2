@@ -97,7 +97,7 @@ public class UserCustomerController : Controller
         var registerId = await customerPhoneRegisterAuthentication.Add(formRequest.CafeId, currentCustomer.Id);
 
 
-        await MakeOrder(formRequest.OrderId, formRequest.CoffeeId, formRequest.CafeId, registerId.Result, currentCustomer.Id, formRequest.Description);
+        await MakeOrder(formRequest.OrderId, formRequest.CoffeeId, formRequest.CafeId, registerId.Result, currentCustomer, formRequest.Description, formRequest.EstimateDeliver);
 
         return RedirectToAction("ShowStatusOrder", new { orderId = formRequest.OrderId });
     }
@@ -134,16 +134,16 @@ public class UserCustomerController : Controller
         if (currentCustomerResult.IsFailed)
             return NotFound();
 
-        await MakeOrder(model.OrderId, model.CoffeeId, model.CafeId, regiseterRecord.Id, currentCustomerResult.Result.Id, model.Description);
+        await MakeOrder(model.OrderId, model.CoffeeId, model.CafeId, regiseterRecord.Id, currentCustomerResult.Result, model.Description, model.EstimateDeliver);
 
         return RedirectToAction("ShowStatusOrder", new { model.OrderId });
     }
 
-    private async Task<IActionResult> MakeOrder(Guid orderId, Guid coffeeId, Guid cafeId, Guid regiseterId, Guid customerId, string description)
+    private async Task<IActionResult> MakeOrder(Guid orderId, Guid coffeeId, Guid cafeId, Guid regiseterId, UserCustomer customer, string description, EstimateDelivery estimate)
     {
         SetRegisterId("RID", regiseterId.ToString());
         await customerPhoneRegisterAuthentication.ReloadTockenRegisterationAsync(regiseterId);
-        var resutlOrder = await orderRepository.MakeNewOrder(orderId, description, cafeId, coffeeId, customerId);
+        var resutlOrder = await orderRepository.MakeNewOrder(orderId, description, cafeId, coffeeId, customer.Id, estimate);
 
         if (resutlOrder.IsFailed)
             return NotFound();
@@ -160,22 +160,17 @@ public class UserCustomerController : Controller
         if (regiseterRecord is null)
             return NotFound();
 
-        var currentCustomerResult = userCustomer.Find(regiseterRecord.UserCustomerId);
-        if (currentCustomerResult.IsFailed)
-            return NotFound();
-
-
         var shiftPhoneNumbers = timeSheetRepository.GetPhoneNumbers(cafeId);
         if (shiftPhoneNumbers is not null && shiftPhoneNumbers.Any())
         {
             shiftPhoneNumbers.ForEach(x =>
             {
-                smsSender.SendOrderToCafe(x, coffeeInfo.Result.CoffeeName, currentCustomerResult.Result.FullName, currentCustomerResult.Result.PhoneNumber);
+                smsSender.SendOrderToCafe(x, coffeeInfo.Result.CoffeeName, customer.FullName, customer.PhoneNumber, estimate);
             });
         }
 
 
-        smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName, currentCustomerResult.Result.FullName, currentCustomerResult.Result.PhoneNumber);
+        smsSender.SendOrderToCafe(coffeeInfo.Result.CafePhoneNumber, coffeeInfo.Result.CoffeeName, customer.FullName, customer.PhoneNumber , estimate);
         return Ok();
     }
 

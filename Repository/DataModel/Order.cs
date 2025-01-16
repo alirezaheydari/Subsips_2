@@ -6,14 +6,16 @@ public class Order
 {
     public Guid Id { get; set; }
     public byte Status { get; set; }
+    public byte? EstimateDeliver { get; set; }
     public string? Description { get; set; }
     public Guid CafeId { get; set; }
+    public Guid? StationId { get; set; }
     [Required]
     public Guid CustomerId { get; set; }
     public DateTime CreateDate { get; set; } = DateTime.Now;
     //public IEnumerable<Guid> CoffeeIds { get; set; } = [];
 
-    public static Order Create(Guid id, string description, Guid cafeId, Guid customerId)
+    public static Order Create(Guid id, string description, Guid cafeId, Guid customerId, EstimateDelivery  estimate, Guid stationId)
     {
         var resutl = new Order();
 
@@ -23,7 +25,8 @@ public class Order
         resutl.CafeId = cafeId;
         resutl.CustomerId = customerId;
         resutl.Status = (byte)OrderStatus.OnProcessed;
-
+        resutl.EstimateDeliver = (byte)estimate;
+        resutl.StationId = stationId;
 
         return resutl;
         
@@ -36,6 +39,13 @@ public class Order
 }
 
 
+
+
+public enum EstimateDelivery
+{
+    FiveMin = 5,
+    TenMin = 10
+};
 public enum OrderStatus
 {
     [Display(Name = "درحال پردازش")]

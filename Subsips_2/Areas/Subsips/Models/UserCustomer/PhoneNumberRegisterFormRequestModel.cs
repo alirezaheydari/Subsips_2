@@ -1,5 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using Repository.DataModel;
 using Repository.Helper.Validations;
+using Subsips_2.Areas.Subsips.Models.UserCustomer.FormRequest;
 
 namespace Subsips_2.Areas.Subsips.Models.UserCustomer;
 
@@ -9,6 +11,18 @@ public class PhoneNumberRegisterFormRequestModel : UserRegisterFormRequestModel
     public Guid CoffeeId { get; set; }
     public Guid CafeId { get; set; }
     public required string FullName { get; set; }
+
+    public string Estimate { get; set; }
+    public EstimateDelivery EstimateDeliver
+    {
+        get
+        {
+            if (Estimate == "10")
+                return EstimateDelivery.TenMin;
+            return EstimateDelivery.FiveMin;
+        }
+    }
+
     public string Description { get; set; }
     public bool IsValid()
     {
